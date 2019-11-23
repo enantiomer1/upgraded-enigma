@@ -23,5 +23,5 @@ Route::namespace('Admin')
 ->prefix('admin')
 ->name('admin.')
 ->group(function(){
-    Route::resource('/users', 'UserController', ['except' => ['show', 'create', 'store']]);
+    Route::resource('/users', 'UserController', ['except' => ['show', 'store']]);
 });

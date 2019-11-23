@@ -36,4 +36,12 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Relation to Roles table
+     * A user can have many roles
+     */
+    public function roles(){
+        return $this->belongsToMany('App\Role');
+    }
 }
