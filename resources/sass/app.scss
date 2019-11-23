@@ -6,3 +6,11 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.alert {
+    position: relative;
+    padding: 2rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+}
