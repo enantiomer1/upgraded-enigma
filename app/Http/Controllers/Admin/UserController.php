@@ -15,6 +15,7 @@ class UserController extends Controller
     {
         $this->middleware(['auth', 'verified', 'nohistory']);
     }
+
     /**
      * Display a listing of the resource.
      *

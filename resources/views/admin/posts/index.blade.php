@@ -2,15 +2,15 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
                     <div class="row align-items-center">
                         <div class="col-8">
-                            <h4 class="mb-0">{{ __('Users') }}</h4>
+                            <h4 class="mb-0">{{ __('Posts') }}</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('admin.users.create') }}" class="btn btn-sm btn-success">{{ __('Add user') }}</a>
+                            <a href="{{ route('admin.posts.create') }}" class="btn btn-sm btn-success">{{ __('Add Post') }}</a>
                         </div>
                     </div>
                 </div>
@@ -18,22 +18,22 @@
                     <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Role</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Publish Date</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($users as $user)
+                            @foreach ($posts as $post)
                             <tr>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->email }}</td>
-                                <td>{{ implode(', ',$user->roles()->get()->pluck('name')->toArray()) }}</td>
+                                <td>{{ $post->title }}</td>
+                                <td>{{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }}</td>
+                                <td>{{ $post->published_date }}</td>
                                 <td>
-                                    <a href="{{ route('admin.users.edit', $user->id) }}" class="float-left pr-3"><button type="button" class="btn btn-info">Edit</button>
+                                    <a href="{{ route('admin.posts.edit', $post->id) }}" class="float-left pr-3"><button type="button" class="btn btn-info">Edit</button>
                                     </a>
-                                    <form action="{{ route('admin.users.destroy', $user) }}" method="POST" class="float-left">
+                                    <form action="{{ route('admin.posts.destroy', $post) }}" method="POST" class="float-left">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Delete</button>
@@ -43,7 +43,7 @@
                             @endforeach
                         </tbody>
                     </table>
-                    {{ $users->links() }}
+                    {{ $posts->links() }}
                 </div>
             </div>
         </div>

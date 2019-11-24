@@ -23,5 +23,6 @@ Route::namespace('Admin')
 ->prefix('admin')
 ->name('admin.')
 ->group(function(){
-    Route::resource('/users', 'UserController', ['except' => ['show', 'store']]);
+    Route::resource('/users', 'UserController', ['except' => ['show']]);
+    Route::resource('/posts', 'PostController');
 });

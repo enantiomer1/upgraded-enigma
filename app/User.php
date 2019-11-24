@@ -46,6 +46,16 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     /**
+     * One to Many relation
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
+    }
+
+    /**
      * Helper Function HasAnyRoles
      * @param array roles
      */
