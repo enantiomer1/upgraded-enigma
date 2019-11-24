@@ -13,7 +13,7 @@ class UserController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['auth', 'verified']);
+        $this->middleware(['auth', 'verified', 'nohistory']);
     }
     /**
      * Display a listing of the resource.
@@ -88,6 +88,9 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $user->roles()->sync($request->roles);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->save();
 
         return redirect()->route('admin.users.index')->with('success', $user->name.' has been updated.');
     }
