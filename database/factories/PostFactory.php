@@ -9,9 +9,9 @@ $factory->define(Post::class, function (Faker $faker) {
     return [
         'user_id' => $faker->numberBetween($min = 1, $max = 5),
         'title' => $faker->sentence($nbWords = 8, $variableNbWords = true),
-        'slug' => $faker->slug(),
-        'description' => $faker->sentence($nbWords = 50, $variableNbWords = true),
-        'content' => $faker->paragraph($nbSentences = 15, $variableNbSentences = true),
+        //'slug' => $faker->slug(),
+        'description' => $faker->sentence($nbWords = 75, $variableNbWords = true),
+        'content' => $faker->paragraph($nbSentences = 50, $variableNbSentences = false),
         'image' => $faker->imageUrl($width = 640, $height = 480),
         'seo_title' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'meta_description' => $faker->sentence($nbWords = 30, $variableNbWords = true),

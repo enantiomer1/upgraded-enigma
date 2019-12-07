@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 // Variables
 @import 'variables';
@@ -7,9 +7,31 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  letter-spacing: 0.2px;
+}
+
+.bg-dark {
+    background-color: #302c4e !important;
+}
+
+.dot {
+  height: 0.75rem;
+  width: 0.75rem;
+  margin-right: 4px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 .navsearch {
 	width: 30%;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #e9ecef;
+}
+
+
 
 .alert {
     position: relative;
@@ -58,6 +80,7 @@
 .sidebar .nav-link {
   font-weight: 500;
   color: #333;
+  padding: 0.4rem 1rem;
 }
 
 .sidebar .nav-link .feather {
@@ -69,9 +92,9 @@
   color: #007bff;
 }
 
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-  color: inherit;
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #888;
 }
 
 .sidebar-heading {
@@ -84,12 +107,12 @@
  */
 
 [role="main"] {
-  padding-top: 133px; /* Space for fixed navbar */
+  padding-top: 56px; /* Space for fixed navbar */
 }
 
 @media (min-width: 768px) {
   [role="main"] {
-    padding-top: 48px; /* Space for fixed navbar */
+    padding-top: 56px; /* Space for fixed navbar */
   }
 }
 

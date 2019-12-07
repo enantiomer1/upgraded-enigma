@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-sm table-striped table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">Title</th>
@@ -31,8 +31,7 @@
                                 <td>{{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }}</td>
                                 <td>{{ $post->published_date }}</td>
                                 <td>
-                                    <a href="{{ route('admin.posts.edit', $post->id) }}" class="float-left pr-3"><button type="button" class="btn btn-info">Edit</button>
-                                    </a>
+                                    <a href="{{ route('admin.posts.edit', $post->slug) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-info">Edit</button></a>
                                     <form action="{{ route('admin.posts.destroy', $post) }}" method="POST" class="float-left">
                                         @csrf
                                         @method('DELETE')

@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'PageController@home')->name('home');
+Route::get('/blog', 'PageController@blog')->name('blog');
+Route::get('/blog/{slug}', 'PageController@blog_single')->name('blog_single');
 
 Auth::routes(['verify' => true]);
 

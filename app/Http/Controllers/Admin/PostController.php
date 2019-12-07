@@ -65,9 +65,10 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit($slug)
     {
-        //
+        $post = Post::where('slug',$slug)->first();
+        return view('admin.posts.edit')->with(['post' => $post]);
     }
 
     /**

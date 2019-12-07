@@ -14,7 +14,22 @@ class PageController extends Controller
      */
     public function home()
     {
-        $posts = Post::orderBy('published_date','desc');
+        $posts = Post::orderBy('published_date','desc')->take(3)->get();
         return view('home')->with('posts', Post::paginate(6));
+    }
+
+    public function blog()
+    {
+        $posts = Post::orderBy('published_date','desc');
+        return view('blog')->with('posts', Post::paginate(6));
+    }
+
+    public function blog_single($slug)
+    {
+        $post = Post::where('slug',$slug)->first();
+        //dd($post);
+        return view('blog_single')->with([
+            'post' => $post
+        ]);
     }
 }

@@ -1,39 +1,39 @@
 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-    <div class="sidebar-sticky py-2 px-2">
+    <div class="sidebar-sticky py-3 px-3">
         <ul class="nav flex-column pt-2">
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="home"></span>
+                    <span class="dot bg-primary"></span>
                     User Profile
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="file"></span>
+                    <span class="dot bg-info"></span>
                     AA Preamble
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="shopping-cart"></span>
+                   <span class="dot bg-success"></span>
                     The 12 Steps
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="users"></span>
+                    <span class="dot bg-warning"></span>
                     The 12 Traditions
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="bar-chart-2"></span>
+                    <span class="dot bg-danger"></span>
                     Favorite Prayers
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="layers"></span>
+                    <span class="dot bg-dark"></span>
                     Joe And Charlie
                 </a>
             </li>
@@ -42,25 +42,25 @@
         <ul class="nav flex-column mb-2">
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
+                    <span class="dot bg-secondary"></span>
                     Sandy Beach
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
+                    <span class="dot bg-primary"></span>
                     Last quarter
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
+                    <span class="dot bg-info"></span>
                     Social engagement
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
+                    <span class="dot bg-success"></span>
                     Year-end sale
                 </a>
             </li>

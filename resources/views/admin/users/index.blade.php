@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'User Management', 'header' => 'User Management'])
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-sm table-striped table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -31,8 +31,7 @@
                                 <td>{{ $user->email }}</td>
                                 <td>{{ implode(', ',$user->roles()->get()->pluck('name')->toArray()) }}</td>
                                 <td>
-                                    <a href="{{ route('admin.users.edit', $user->id) }}" class="float-left pr-3"><button type="button" class="btn btn-info">Edit</button>
-                                    </a>
+                                    <a href="{{ route('admin.users.edit', $user->id) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-info">Edit</button></a>
                                     <form action="{{ route('admin.users.destroy', $user) }}" method="POST" class="float-left">
                                         @csrf
                                         @method('DELETE')
