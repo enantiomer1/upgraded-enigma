@@ -13,10 +13,7 @@
                         <h5 class="card-title">{{ $post->title }}</h5>
                         <p class="card-text">{{ $post->description }}</p>
                         <p class="card-text"><small class="text-muted">{{ $post->published_date }}</small></p>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <span data-feather="calendar"></span>
-                            Read More
-                        </button>
+                        <a href="{{ route('blog_single', $post->slug) }}" class="btn btn-sm btn-success">{{ __('Read More') }}</a>
                     </div>
                 </div>
             </div>

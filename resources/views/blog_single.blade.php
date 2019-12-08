@@ -1,17 +1,15 @@
-@extends('layouts.app', ['title' => $post->title, 'header' => $post->title ])
+@extends('layouts.app', ['title' => $post->title, 'header' => 'Recent Article'])
 @section('content')
 <div class="row">
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ $post->image }}" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
+
+                <div class="col-md-12">
                     <div class="card-body">
-                        <h5 class="card-title">{{ $post->title }}</h5>
-                        <p class="card-text">{{ $post->content }}</p>
-                        <p class="card-text"><small class="text-muted">{{ $post->published_date }}</small></p>
+                        <h4 class="card-title pb-3 border-bottom"><span class="title-line bg-primary"></span>{{ $post->title }}</h4>
+                        {!! $post->content !!}
+                        <h5 class="card-text">Written by {{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }} {{ $post->published_date }}</h5>
                     </div>
                 </div>
             </div>

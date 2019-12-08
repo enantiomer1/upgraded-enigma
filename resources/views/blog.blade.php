@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Blog', 'header' => 'Recent Articels'])
+@extends('layouts.app', ['title' => 'Blog', 'header' => 'Recent Articles'])
 @section('content')
 <div class="row">
     <div class="col-md-12 col-lg-8">

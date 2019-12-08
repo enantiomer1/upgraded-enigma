@@ -78,9 +78,21 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $slug)
     {
-        //
+        $post = Post::where('slug',$slug)->first();
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->content = $request->content;
+        $post->image = $request->image;
+        $post->seo_title = $request->seo_title;
+        $post->meta_description = $request->meta_description;
+        $post->meta_keywords = $request->meta_keywords;
+        $post->published_date = $request->published_date;
+        $post->save();
+
+        return redirect()->route('admin.posts.index')->with('success', 'Post has been updated.');
+
     }
 
     /**
