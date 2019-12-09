@@ -1,4 +1,4 @@
-@extends('layouts.app-backend', ['title' => 'Edit Post', 'header' => 'Edit Post'])
+@extends('layouts.app-post', ['title' => 'Edit Post', 'header' => 'Edit Post'])
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-header">Edit Post</div>
                 <div class="card-body">
-                    <form action="{{ route('admin.posts.update', ['post' => $post->slug ]) }}" method="POST">
+                    <form action="{{ route('admin.posts.update', ['post' => $post->slug ]) }}" method="POST" enctype="multipart/form-data">
                         <div class="form-group row">
                             <label for="title" class="col-md-2 col-form-label text-md-right">Title</label>
                             <div class="col-md-8">

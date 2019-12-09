@@ -15,12 +15,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/feather.js') }}"></script>
     <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -41,7 +40,6 @@
             </div>
         </div>
     </div>
-     <script>feather.replace();</script>
      <script>CKEDITOR.replace( 'content' );</script>
 </body>
 </html>

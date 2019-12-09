@@ -9,8 +9,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    {{-- <span class="dot bg-info"></span> --}}
-                    <span data-feather="calendar"></span>
+                    <span class="dot bg-info"></span>
                     AA Preamble
                 </a>
             </li>

@@ -9,14 +9,14 @@
                     <div class="card-body">
                         <h4 class="card-title pb-3 border-bottom"><span class="title-line bg-primary"></span>{{ $post->title }}</h4>
                         {!! $post->content !!}
-                        <h5 class="card-text">Written by {{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }} {{ $post->published_date }}</h5>
+                        <h5 class="card-text"><span class="title-line bg-primary"></span>Written by {{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }} {{ $post->published_date }}</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-lg-4 d-none d-lg-block">
-        <div class="card">
+        <div class="card shadow">
             <div class="card-header">
                 Sidebar
             </div>

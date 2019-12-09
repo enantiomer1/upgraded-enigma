@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap');
 
 // Variables
 @import 'variables';
@@ -7,9 +7,8 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-body {
-    letter-spacing: 0.2px;
-}
+// Bootswatch
+@import 'bootswatch';
 
 .bg-dark {
     background-color: #302c4e !important;
@@ -24,11 +23,12 @@ body {
 }
 
 .title-line {
-    height: 7px;
-    width: 30px;
+    height: 0.5rem;
+    width: 2rem;
+    border: 1px solid #777;
+    border-radius: 5px;
     margin-right: 10px;
-    margin-bottom: 5px;
-    border-radius: 20%;
+    margin-bottom: 3px;
     display: inline-block;
 }
 

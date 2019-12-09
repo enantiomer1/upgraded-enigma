@@ -1,4 +1,4 @@
-@extends('layouts.app-backend', ['title' => 'Create New Post', 'header' => 'Create New Post'])
+@extends('layouts.app-post', ['title' => 'Create New Post', 'header' => 'Create New Post'])
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -47,7 +47,7 @@
                         <div class="form-group row">
                             <label for="image" class="col-md-2 col-form-label text-md-right">Image</label>
                             <div class="col-md-8">
-                                <input id="image" type="text" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" required autocomplete="image" autofocus>
+                                <input id="image" type="file" class="form-control-file @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" required autocomplete="image" autofocus>
                                 @error('image')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
