@@ -46,17 +46,19 @@
                         </div>
                         <div class="form-group row">
                             <label for="section" class="col-md-2 col-form-label text-md-right">Section</label>
-                            <div class="col-md-8">
-                                <select id="section" class="form-control @error('section') is-invalid @enderror" name="section" required autocomplete="section" autofocus>
-                                  <option>blog</option>
-                                  <option>history</option>
-                                  <option>literature</option>
-                                </select>
-                                @error('section')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input type="checkbox" name="section" value="blog" @if($post->section === 'blog') checked @endif>
+                                    <label>blog</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="section" value="history" @if($post->section === 'history') checked @endif>
+                                    <label>history</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="section" value="literature" @if($post->section === 'literature') checked @endif>
+                                    <label>literature</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">

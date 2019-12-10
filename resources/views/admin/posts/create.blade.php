@@ -48,9 +48,9 @@
                             <label for="section" class="col-md-2 col-form-label text-md-right">Section</label>
                             <div class="col-md-8">
                                 <select id="section" class="form-control @error('section') is-invalid @enderror" name="section" value="{{ old('section') }}" required autocomplete="section" autofocus>
-                                  <option>blog</option>
-                                  <option>history</option>
-                                  <option>literature</option>
+                                    <option>blog</option>
+                                    <option>history</option>
+                                    <option>literature</option>
                                 </select>
                                 @error('section')
                                 <span class="invalid-feedback" role="alert">

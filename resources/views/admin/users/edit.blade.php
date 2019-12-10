@@ -32,9 +32,8 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group row">
-
-                                <label for="roles" class="col-md-2 col-form-label text-md-right">Roles</label>
-                                <div class="col-md-4">
+                            <label for="roles" class="col-md-2 col-form-label text-md-right">Roles</label>
+                            <div class="col-md-4">
                                 @foreach ($roles as $role)
                                 <div class="form-check">
                                     <input type="checkbox" name="roles[]" value="{{ $role->id }}" @if($user->roles->pluck('id')->contains($role->id)) checked @endif>

@@ -7,7 +7,7 @@
             <div class="row no-gutters">
                 <div class="col-md-4 pr-0">
                     <div class="card-body pr-0">
-                    <img src="/storage/img/{{$post->image}}" class="card-img" alt="{{ $post->alt_text }}">
+                        <img src="/storage/img/{{$post->image}}" class="card-img" alt="{{ $post->alt_text }}">
                     </div>
                 </div>
                 <div class="col-md-8">

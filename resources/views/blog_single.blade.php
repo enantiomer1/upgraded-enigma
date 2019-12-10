@@ -4,7 +4,6 @@
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="row no-gutters">
-
                 <div class="col-md-12">
                     <div class="card-body">
                         <h4 class="card-title pb-3 border-bottom"><span class="title-line bg-warning"></span>{{ $post->title }}</h4>

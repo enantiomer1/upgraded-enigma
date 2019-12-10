@@ -15,7 +15,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                   <span class="dot bg-success"></span>
+                    <span class="dot bg-success"></span>
                     The 12 Steps
                 </a>
             </li>
@@ -38,7 +38,6 @@
                 </a>
             </li>
         </ul>
-
         <ul class="nav flex-column mb-2">
             <li class="nav-item">
                 <a class="nav-link" href="#">
