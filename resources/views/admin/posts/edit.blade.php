@@ -45,9 +45,24 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="section" class="col-md-2 col-form-label text-md-right">Section</label>
+                            <div class="col-md-8">
+                                <select id="section" class="form-control @error('section') is-invalid @enderror" name="section" required autocomplete="section" autofocus>
+                                  <option>blog</option>
+                                  <option>history</option>
+                                  <option>literature</option>
+                                </select>
+                                @error('section')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="image" class="col-md-2 col-form-label text-md-right">Image</label>
                             <div class="col-md-8">
-                                <input id="image" type="text" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ $post->image }}" required autocomplete="image" autofocus>
+                                <input id="image" type="file" class="form-control-file @error('image') is-invalid @enderror" name="image" value="{{ $post->image }}" required autocomplete="image" autofocus>
                                 @error('image')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -56,10 +71,10 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="seo_title" class="col-md-2 col-form-label text-md-right">SEO Title</label>
+                            <label for="alt_text" class="col-md-2 col-form-label text-md-right">Alt Text</label>
                             <div class="col-md-8">
-                                <input id="seo_title" type="text" class="form-control @error('seo_title') is-invalid @enderror" name="seo_title" value="{{ $post->seo_title }}" required autocomplete="seo_title" autofocus>
-                                @error('seo_title')
+                                <input id="alt_text" type="text" class="form-control @error('alt_text') is-invalid @enderror" name="alt_text" value="{{ $post->alt_text }}" required autocomplete="alt_text" autofocus>
+                                @error('alt_text')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

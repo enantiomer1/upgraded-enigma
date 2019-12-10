@@ -23,8 +23,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('admin.posts.index')->with('posts', Post::paginate(10));
+        $posts = Post::orderBy('published_date','desc')->paginate(10);
+        return view('admin.posts.index')->with('posts', $posts);
     }
 
     /**
@@ -45,7 +45,37 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Handle File Upload
+        if($request->hasFile('image')){
+            // Get filename with the extension
+            $filenameWithExt = $request->file('image')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('image')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore= $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('image')->storeAs('public/img', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+
+        // Create Post
+        $post = new Post;
+        $post->user_id = auth()->user()->id;
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->content = $request->content;
+        $post->section = $request->section;
+        $post->image = $fileNameToStore;
+        $post->alt_text = $request->alt_text;
+        $post->meta_description = $request->meta_description;
+        $post->meta_keywords = $request->meta_keywords;
+        $post->published_date = $request->published_date;
+        $post->save();
+
+        return redirect()->route('admin.posts.index')->with('success', 'Post has been created.');
     }
 
     /**
@@ -80,12 +110,30 @@ class PostController extends Controller
      */
     public function update(Request $request, $slug)
     {
+
+        // Handle File Upload
+        if($request->hasFile('image')){
+            // Get filename with the extension
+            $filenameWithExt = $request->file('image')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('image')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore= $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('image')->storeAs('public/img', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+
         $post = Post::where('slug',$slug)->first();
         $post->title = $request->title;
         $post->description = $request->description;
         $post->content = $request->content;
-        $post->image = $request->image;
-        $post->seo_title = $request->seo_title;
+        $post->section = $request->section;
+        $post->image = $fileNameToStore;
+        $post->alt_text = $request->alt_text;
         $post->meta_description = $request->meta_description;
         $post->meta_keywords = $request->meta_keywords;
         $post->published_date = $request->published_date;

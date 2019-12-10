@@ -47,9 +47,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('history') }}">
                     <span class="dot bg-primary"></span>
-                    Last quarter
+                    AA History
                 </a>
             </li>
             <li class="nav-item">

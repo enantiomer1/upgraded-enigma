@@ -14,7 +14,7 @@
           AA Stuff
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">AA History</a>
+          <a class="dropdown-item" href="{{ route('history') }}">AA History</a>
           <a class="dropdown-item" href="#">AA Literature</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Find a Sponsor</a>

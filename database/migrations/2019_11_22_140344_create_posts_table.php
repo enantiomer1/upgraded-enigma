@@ -20,8 +20,9 @@ class CreatePostsTable extends Migration
             $table->string('slug')->default('');
             $table->text('description')->nullable();
             $table->mediumText('content')->nullable();
+            $table->string('section')->nullable();
             $table->string('image')->nullable();
-            $table->string('seo_title')->nullable();
+            $table->string('alt_text')->nullable();
             $table->text('meta_description')->nullable();
             $table->text('meta_keywords')->nullable();
             $table->datetime('published_date')->nullable();

@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Post Managment', 'header' => 'Post Management'])
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -20,6 +20,7 @@
                             <tr>
                                 <th scope="col">Title</th>
                                 <th scope="col">Author</th>
+                                <th scope="col">Section</th>
                                 <th scope="col">Publish Date</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -29,13 +30,14 @@
                             <tr>
                                 <td>{{ $post->title }}</td>
                                 <td>{{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }}</td>
+                                <td>{{ $post->section }}</td>
                                 <td>{{ $post->published_date }}</td>
                                 <td>
-                                    <a href="{{ route('admin.posts.edit', $post->slug) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-info">Edit</button></a>
+                                    <a href="{{ route('admin.posts.edit', $post->slug) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-sm btn-info">Edit</button></a>
                                     <form action="{{ route('admin.posts.destroy', $post) }}" method="POST" class="float-left">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                                     </form>
                                 </td>
                             </tr>

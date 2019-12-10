@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => $post->title, 'header' => 'Recent Article'])
+@extends('layouts.app', ['title' => $post->title, 'header' => 'AA History'])
 @section('content')
 <div class="row">
     <div class="col-md-12 col-lg-8">

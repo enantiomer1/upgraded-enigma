@@ -14,6 +14,8 @@
 Route::get('/', 'PageController@home')->name('home');
 Route::get('/blog', 'PageController@blog')->name('blog');
 Route::get('/blog/{slug}', 'PageController@blog_single')->name('blog_single');
+Route::get('/history', 'PageController@history')->name('history');
+Route::get('/history/{slug}', 'PageController@history_single')->name('history_single');
 
 Auth::routes(['verify' => true]);
 
