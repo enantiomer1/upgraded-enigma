@@ -14,21 +14,24 @@ class PageController extends Controller
      */
     public function home()
     {
-        $posts = Post::orderBy('published_date','desc')->take(3)->get();
+        $posts = Post::where('section', 'blog')->orderBy('published_date','desc')->take(3)->get();
         return view('home')->with('posts', $posts);
     }
 
     public function blog()
     {
-        $posts = Post::orderBy('published_date','desc')->paginate(6);
-        return view('blog')->with('posts', $posts);
+        $title = 'Blog';
+        $header = 'Recent Articles';
+        $posts = Post::where('section', 'blog')->orderBy('published_date','desc')->paginate(6);
+        return view('blog', compact('title', 'header', 'posts'));
     }
 
     public function blog_single($slug)
     {
+        $title = $slug;
+        $header = 'Recent Article';
         $post = Post::where('slug',$slug)->first();
-        //dd($post);
-        return view('blog_single')->with('post', $post);
+        return view('blog_single', compact('title', 'header', 'post'));
     }
 
     public function history()
@@ -40,7 +43,6 @@ class PageController extends Controller
     public function history_single($slug)
     {
         $post = Post::where('slug',$slug)->first();
-        //dd($post);
         return view('history_single')->with('post', $post);
     }
 }

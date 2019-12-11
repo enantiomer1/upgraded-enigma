@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Blog', 'header' => 'Recent Articles'])
+@extends('layouts.app')
 @section('content')
 <div class="row">
     <div class="col-md-12 col-lg-8">
@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title border-bottom pb-3"><span class="title-line bg-warning"></span>{{ $post->title }}</h5>
                         <p class="card-text border-bottom pb-3">{{ $post->description }}</p>
-                        <p class="card-text"><small class="text-muted">Written by {{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }} {{ $post->published_date->format('m/d/Y') }}</small><a href="{{ route('blog_single', $post->slug) }}" class="btn btn-sm btn-primary ml-4">{{ __('Read More') }}</a></p>
+                        <p class="card-text"><small class="text-muted">Published {{ $post->published_date->format('m/d/Y') }}</small><a href="{{ route('blog_single', $post->slug) }}" class="btn btn-sm btn-primary ml-4">{{ __('Read More') }}</a></p>
                     </div>
                 </div>
             </div>

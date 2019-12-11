@@ -8,7 +8,7 @@
                     <div class="card-body">
                         <h4 class="card-title pb-3 border-bottom"><span class="title-line bg-warning"></span>{{ $post->title }}</h4>
                         <div class="border-bottom">{!! $post->content !!}</div>
-                        <h6 class="card-text pt-3"><span class="title-line bg-info"></span>Written by {{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }} {{ $post->published_date->format('m/d/Y') }}</h6>
+                        <h6 class="card-text pt-3"><span class="title-line bg-info"></span>Published {{ $post->published_date->format('m/d/Y') }}</h6>
                     </div>
                 </div>
             </div>
