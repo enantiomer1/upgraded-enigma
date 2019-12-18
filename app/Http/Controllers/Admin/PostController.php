@@ -23,8 +23,10 @@ class PostController extends Controller
      */
     public function index()
     {
+        $title = 'Content Management';
+        $header = 'Content Management';
         $posts = Post::orderBy('published_date','desc')->paginate(10);
-        return view('admin.posts.index')->with('posts', $posts);
+        return view('admin.posts.index', compact('title', 'header', 'posts'));
     }
 
     /**
@@ -34,7 +36,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        $title = 'Create Content';
+        $header = 'Create Content';
+        return view('admin.posts.create', compact('title', 'header'));
     }
 
     /**
@@ -71,11 +75,10 @@ class PostController extends Controller
         $post->image = $fileNameToStore;
         $post->alt_text = $request->alt_text;
         $post->meta_description = $request->meta_description;
-        $post->meta_keywords = $request->meta_keywords;
         $post->published_date = $request->published_date;
         $post->save();
 
-        return redirect()->route('admin.posts.index')->with('success', 'Post has been created.');
+        return redirect()->route('admin.posts.index')->with('success', 'Content has been created.');
     }
 
     /**
@@ -97,8 +100,10 @@ class PostController extends Controller
      */
     public function edit($slug)
     {
+        $title = 'Edit Content';
+        $header = 'Edit Content';
         $post = Post::where('slug',$slug)->first();
-        return view('admin.posts.edit')->with(['post' => $post]);
+        return view('admin.posts.edit', compact('title', 'header', 'post'));
     }
 
     /**
@@ -135,11 +140,10 @@ class PostController extends Controller
         $post->image = $fileNameToStore;
         $post->alt_text = $request->alt_text;
         $post->meta_description = $request->meta_description;
-        $post->meta_keywords = $request->meta_keywords;
         $post->published_date = $request->published_date;
         $post->save();
 
-        return redirect()->route('admin.posts.index')->with('success', 'Post has been updated.');
+        return redirect()->route('admin.posts.index')->with('success', 'Content has been updated.');
 
     }
 

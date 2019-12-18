@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary py-0">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark py-0 shadow" style="background-color: #325D88;">
     <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('history') }}">AA History</a>
-                    <a class="dropdown-item" href="#">AA Literature</a>
+                    <a class="dropdown-item" href="{{ route('literature') }}">AA Literature</a>
+                    <a class="dropdown-item" href="{{ route('prayers') }}">AA Prayers</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Find a Sponsor</a>
                 </div>
@@ -27,11 +28,11 @@
             <!-- Authentication Links -->
             @guest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">Login</a>
             </li>
             @if (Route::has('register'))
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="nav-link" href="{{ route('register') }}">Register</a>
             </li>
             @endif
             @else
@@ -40,16 +41,12 @@
                     {{ Auth::user()->name }} <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
-                    <a class="dropdown-item" href="{{ route('admin.users.index') }}">
-                        {{ __('User Management') }}
-                    </a>
-                    <a class="dropdown-item" href="{{ route('admin.posts.index') }}">
-                        {{ __('Post Management') }}
-                    </a>
+                    @can('isAdmin')
+                    <a class="dropdown-item" href="{{ route('admin.users.index') }}">User Management</a>
+                    <a class="dropdown-item" href="{{ route('admin.posts.index') }}">Content Management</a>
+                    @endcan
+                    <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
+                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
@@ -57,9 +54,9 @@
             </li>
             @endguest
         </ul>
-        <form class="form-inline py-2 pl-2">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline py-2 pl-2" role="search" method="get" action="{{ route('search') }}">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>

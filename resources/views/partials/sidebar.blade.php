@@ -1,11 +1,13 @@
-<nav class="col-md-2 d-none d-md-block bg-light sidebar">
-    <div class="sidebar-sticky py-3 px-3">
+<nav class="col-md-2 d-none d-md-block bg-light sidebar shadow">
+    <div class="sidebar-sticky py-3 px-2">
         <ul class="nav flex-column pt-2">
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                @auth
+                <a class="nav-link" href="{{ route('dashboard') }}">
                     <span class="dot bg-primary"></span>
                     User Profile
                 </a>
+                @endauth
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -26,9 +28,27 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="dot bg-danger"></span>
-                    Favorite Prayers
+                <a class="nav-link" href="{{ route('history') }}">
+                    <span class="dot bg-primary"></span>
+                    AA History
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('literature') }}">
+                    <span class="dot bg-info"></span>
+                    AA Literature
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('prayers') }}">
+                    <span class="dot bg-warning"></span>
+                    AA Prayers
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://www.aagrapevine.org/" target="_blank">
+                    <span class="dot bg-success"></span>
+                    AA Grapevine
                 </a>
             </li>
             <li class="nav-item">
@@ -37,8 +57,6 @@
                     Joe And Charlie
                 </a>
             </li>
-        </ul>
-        <ul class="nav flex-column mb-2">
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span class="dot bg-secondary"></span>
@@ -46,21 +64,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('history') }}">
-                    <span class="dot bg-primary"></span>
-                    AA History
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="dot bg-info"></span>
-                    Social engagement
-                </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span class="dot bg-success"></span>
-                    Year-end sale
+                    Speaker Tapes
                 </a>
             </li>
         </ul>

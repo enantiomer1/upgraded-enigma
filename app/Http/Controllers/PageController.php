@@ -14,8 +14,27 @@ class PageController extends Controller
      */
     public function home()
     {
+        $title = 'Home';
+        $header = 'Welcome to Step Depot';
         $posts = Post::where('section', 'blog')->orderBy('published_date','desc')->take(3)->get();
-        return view('home')->with('posts', $posts);
+        return view('home', compact('title', 'header', 'posts'));
+    }
+
+    public function search(Request $request)
+    {
+        $key = trim($request->get('q'));
+        $title = 'Search Results';
+        $header = 'Search Results';
+        $posts = Post::query()->where('title', 'like', "%{$key}%")->orderBy('published_date', 'desc')->paginate(6);
+        return view('pages.search', compact('posts'));
+    }
+
+    public function search_single($slug)
+    {
+        $title = $slug;
+        $header = 'Search Result';
+        $post = Post::where('slug',$slug)->first();
+        return view('pages.search_single', compact('title', 'header', 'post'));
     }
 
     public function blog()
@@ -23,7 +42,7 @@ class PageController extends Controller
         $title = 'Blog';
         $header = 'Recent Articles';
         $posts = Post::where('section', 'blog')->orderBy('published_date','desc')->paginate(6);
-        return view('blog', compact('title', 'header', 'posts'));
+        return view('pages.blog', compact('title', 'header', 'posts'));
     }
 
     public function blog_single($slug)
@@ -31,18 +50,54 @@ class PageController extends Controller
         $title = $slug;
         $header = 'Recent Article';
         $post = Post::where('slug',$slug)->first();
-        return view('blog_single', compact('title', 'header', 'post'));
+        return view('pages.blog_single', compact('title', 'header', 'post'));
     }
 
     public function history()
     {
+        $title = 'AA History';
+        $header = 'AA History';
         $posts = Post::where('section', 'history')->orderBy('published_date','desc')->paginate(6);
-        return view('history')->with('posts', $posts);
+        return view('pages.history', compact('title', 'header', 'posts'));
     }
 
     public function history_single($slug)
     {
+        $title = $slug;
+        $header = 'AA History';
         $post = Post::where('slug',$slug)->first();
-        return view('history_single')->with('post', $post);
+        return view('pages.history_single', compact('title', 'header', 'post'));
+    }
+
+    public function literature()
+    {
+        $title = 'AA Literature';
+        $header = 'AA Literature';
+        $posts = Post::where('section', 'literature')->orderBy('published_date','desc')->paginate(6);
+        return view('pages.literature', compact('title', 'header', 'posts'));
+    }
+
+    public function literature_single($slug)
+    {
+        $title = $slug;
+        $header = 'AA Literature';
+        $post = Post::where('slug',$slug)->first();
+        return view('pages.literature_single', compact('title', 'header', 'post'));
+    }
+
+    public function prayers()
+    {
+        $title = 'AA Prayers';
+        $header = 'AA Prayers';
+        $posts = Post::where('section', 'prayers')->orderBy('published_date','desc')->paginate(6);
+        return view('pages.prayers', compact('title', 'header', 'posts'));
+    }
+
+    public function prayers_single($slug)
+    {
+        $title = $slug;
+        $header = 'AA Prayers';
+        $post = Post::where('slug',$slug)->first();
+        return view('pages.prayers_single', compact('title', 'header', 'post'));
     }
 }

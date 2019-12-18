@@ -1,16 +1,16 @@
-@extends('layouts.app', ['title' => 'Post Managment', 'header' => 'Post Management'])
+@extends('layouts.app')
 @section('content')
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
+        <div class="col-md-10">
+            <div class="card shadow">
+                <div class="card-header bg-light shadow-sm">
                     <div class="row align-items-center">
                         <div class="col-8">
-                            <h4 class="mb-0">{{ __('Posts') }}</h4>
+                            <h4 class="mb-0">Content - Blog, History, Literature and Prayers</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('admin.posts.create') }}" class="btn btn-sm btn-success">{{ __('Add Post') }}</a>
+                            <a href="{{ route('admin.posts.create') }}" class="btn btn-sm btn-secondary">Add Content</a>
                         </div>
                     </div>
                 </div>
@@ -19,7 +19,6 @@
                         <thead>
                             <tr>
                                 <th scope="col">Title</th>
-                                <th scope="col">Author</th>
                                 <th scope="col">Section</th>
                                 <th scope="col">Publish Date</th>
                                 <th scope="col">Action</th>
@@ -29,7 +28,6 @@
                             @foreach ($posts as $post)
                             <tr>
                                 <td>{{ $post->title }}</td>
-                                <td>{{ implode(', ',$post->user()->get()->pluck('name')->toArray()) }}</td>
                                 <td>{{ $post->section }}</td>
                                 <td>{{ $post->published_date }}</td>
                                 <td>

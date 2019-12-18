@@ -23,6 +23,8 @@ class DashboardController extends Controller
      */
     public function dashboard()
     {
-        return view('dashboard');
+        $title = 'Dashboard';
+        $header = 'Dashboard';
+        return view('pages.dashboard', compact('title', 'header'));
     }
 }

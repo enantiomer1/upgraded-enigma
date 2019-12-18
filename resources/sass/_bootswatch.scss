@@ -1,102 +1,235 @@
-// Spacelab 4.3.1
+// Sandstone 4.3.1
 // Bootswatch
 
 
 // Variables ===================================================================
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" !default;
+$web-font-path: "https://fonts.googleapis.com/css?family=Roboto:400,500,700" !default;
 @import url($web-font-path);
-
-@mixin btn-shadow($color){
-  @include gradient-y-three-colors(lighten($color, 15%), $color, 50%, darken($color, 4%));
-  filter: none;
-  border: 1px solid darken($color, 10%);
-}
 
 // Navbar ======================================================================
 
+.bg-primary {
+  background-color: $dark !important;
+}
+
+.bg-dark {
+  background-color: $secondary !important;
+}
+
+.bg-light {
+  background-color: $gray-200 !important;
+}
+
+.sandstone {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .navbar {
-
-  .nav-link,
-  .navbar-brand {
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
-    transition: color ease-in-out .2s;
+  .nav-link {
+    @extend .sandstone;
   }
 
-  &.bg-primary {
-    @include btn-shadow(map-get($theme-colors, "primary"));
-  }
-
-  &.bg-dark {
-    @include btn-shadow(map-get($theme-colors, "secondary"));
-  }
-
-  &.bg-light {
-    @include btn-shadow(map-get($theme-colors, "light"));
-
-    .nav-link,
-    .navbar-brand {
-      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
-    }
-
-    .navbar-brand {
-      color: $navbar-light-color;
-
-      &:hover {
-        color: $info;
-      }
-    }
+  &-form input,
+  &-form .form-control {
+    border: none;
   }
 }
 
 // Buttons =====================================================================
 
 .btn {
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
+  @extend .sandstone;
 
-  &-link {
-    text-shadow: none;
-  }
-}
-
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include btn-shadow($value);
+  &:hover {
+    border-color: transparent;
   }
 
-  .btn-#{$color}:not(.disabled):hover {
-    @include btn-shadow(darken($value, 4%));
+  &-success,
+  &-warning {
+    color: $white;
   }
-}
-
-[class*="btn-outline-"] {
-  text-shadow: none;
 }
 
 // Typography ==================================================================
 
 // Tables ======================================================================
 
+.table {
+  .thead-dark th {
+    background-color: $dark;
+  }
+}
+
 // Forms =======================================================================
+
+input,
+.form-control {
+  @include box-shadow(none);
+
+  &:focus {
+    @include box-shadow(none);
+  }
+}
 
 // Navs ========================================================================
 
+.nav-tabs {
+  .nav-link {
+    @extend .sandstone;
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $gray-600;
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover,
+  .nav-link.disabled:focus {
+    background-color: $gray-200;
+    border-color: $gray-300;
+    color: $nav-link-disabled-color;
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    @extend .sandstone;
+    border: 1px solid transparent;
+    color: $gray-600;
+  }
+
+  .nav-link.active,
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $gray-300;
+  }
+}
+
+
+.breadcrumb {
+  @extend .sandstone;
+  border: 1px solid $gray-300;
+}
+
+.pagination {
+  @extend .sandstone;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    @extend .sandstone;
+  }
+}
+
 // Indicators ==================================================================
+
+.alert {
+  color: #fff;
+
+  a,
+  .alert-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &-primary {
+    &, > th, > td {
+      background-color: $primary;
+    }
+  }
+
+  &-secondary {
+    &, > th, > td {
+      background-color: $secondary;
+    }
+  }
+
+  &-success {
+    &, > th, > td {
+      background-color: $success;
+    }
+  }
+
+  &-info {
+    &, > th, > td {
+      background-color: $info;
+    }
+  }
+
+  &-danger {
+    &, > th, > td {
+      background-color: $danger;
+    }
+  }
+
+  &-warning {
+    &, > th, > td {
+      background-color: $warning;
+    }
+  }
+
+  &-dark {
+    &, > th, > td {
+      background-color: $dark;
+    }
+  }
+
+  &-light {
+    &, > th, > td {
+      background-color: $light;
+    }
+  }
+
+  &-light {
+    &,
+    & a:not(.btn),
+    & .alert-link {
+      color: $body-color;
+    }
+  }
+}
 
 .badge {
 
-  &-secondary {
+  &-success,
+  &-warning {
     color: $white;
+  }
+}
+
+.tooltip {
+  @extend .sandstone;
+}
+
+.close {
+  color: $gray-300;
+  opacity: 1;
+
+  &:hover {
+    color: darken($gray-300, 20%);
   }
 }
 
 // Progress bars ===============================================================
 
 // Containers ==================================================================
-
-.card,
-.list-group-item {
-  h1, h2, h3, h4, h5, h6 {
-    color: inherit;
-  }
-}

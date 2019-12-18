@@ -16,7 +16,6 @@ $factory->define(Post::class, function (Faker $faker) {
         'image' => 'matrix-code_1575854578.jpg',
         'alt_text' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'meta_description' => $faker->sentence($nbWords = 30, $variableNbWords = true),
-        'meta_keywords' => $faker->sentence($nbWords = 3, $variableNbWords = false),
         'published_date' => now(),
     ];
 });
