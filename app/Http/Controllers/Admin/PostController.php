@@ -49,6 +49,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        request()->validate([
+            'title' => ['required', 'min:3', 'max:255'],
+            'description' => 'required',
+            'content' => ['required', 'min:3'],
+            'section' => 'required',
+            'image' => ['required', 'image', 'max:4999'],
+            'alt_text' => ['required', 'min:3', 'max:75'],
+            'meta_description' => ['required', 'min:3', 'max:155'],
+            'published_date' => 'required',
+        ]);
+
         // Handle File Upload
         if($request->hasFile('image')){
             // Get filename with the extension
@@ -116,6 +127,12 @@ class PostController extends Controller
     public function update(Request $request, $slug)
     {
 
+        request()->validate([
+            'title' => ['required', 'min:3', 'max:255'],
+            'description' => 'required',
+            'content' => ['required', 'min:3'],
+        ]);
+        $post = Post::where('slug',$slug)->first();
         // Handle File Upload
         if($request->hasFile('image')){
             // Get filename with the extension
@@ -128,16 +145,17 @@ class PostController extends Controller
             $fileNameToStore= $filename.'_'.time().'.'.$extension;
             // Upload Image
             $path = $request->file('image')->storeAs('public/img', $fileNameToStore);
-        } else {
-            $fileNameToStore = 'noimage.jpg';
+            // Delete file if exists
+            Storage::delete('public/img/'.$post->image);
         }
 
-        $post = Post::where('slug',$slug)->first();
         $post->title = $request->title;
         $post->description = $request->description;
         $post->content = $request->content;
         $post->section = $request->section;
-        $post->image = $fileNameToStore;
+        if($request->hasFile('image')){
+            $post->image = $fileNameToStore;
+        }
         $post->alt_text = $request->alt_text;
         $post->meta_description = $request->meta_description;
         $post->published_date = $request->published_date;

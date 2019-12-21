@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card shadow">
-                <div class="card-header bg-light shadow-sm">Edit Content</div>
+                <div class="card-header bg-light">Edit Content</div>
                 <div class="card-body">
                     <form action="{{ route('admin.posts.update', ['post' => $post->slug ]) }}" method="POST" enctype="multipart/form-data">
                         <div class="form-group row">
@@ -68,7 +68,7 @@
                         <div class="form-group row">
                             <label for="image" class="col-md-2 col-form-label text-md-right">Image</label>
                             <div class="col-md-8">
-                                <input id="image" type="file" class="form-control-file @error('image') is-invalid @enderror" name="image" value="{{ $post->image }}" required autocomplete="image" autofocus>
+                                <input id="image" type="file" class="form-control-file @error('image') is-invalid @enderror" name="image" value="{{ $post->image }}" autocomplete="image" autofocus>
                                 @error('image')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

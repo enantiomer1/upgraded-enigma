@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card shadow">
-                <div class="card-header bg-light shadow-sm">
+                <div class="card-header bg-light">
                     <div class="row align-items-center">
                         <div class="col-8">
                             <h4 class="mb-0">Content - Blog, History, Literature and Prayers</h4>

@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-light">
                     <div class="row align-items-center">
                         <div class="col-8">
                             <h4 class="mb-0">{{ __('Users') }}</h4>

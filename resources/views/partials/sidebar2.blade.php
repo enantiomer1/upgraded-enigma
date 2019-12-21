@@ -1,6 +1,6 @@
 <div class="col-lg-4 d-none d-lg-block">
     <div class="card shadow mb-3">
-        <div class="card-header bg-light shadow-sm"><span class="title-line2"></span>Find A Sponsor Near You</div>
+        <div class="card-header bg-light"><span class="title-line2"></span>Find A Sponsor Near You</div>
         <div class="card-body pt-3">
             <p class="card-text mb-0">If you are new to the program and do not have a sponsor yet, we highly recommend it.</p>
                 <ul class="nav flex-column mb-2">
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="card shadow mb-3">
-        <div class="card-header bg-light shadow-sm"><span class="title-line2"></span>Find A Sponsor Near You</div>
+        <div class="card-header bg-light"><span class="title-line2"></span>Find A Sponsor Near You</div>
         <div class="card-body pt-3">
             <p class="card-text mb-0">If you are new to the program and do not have a sponsor yet, we highly recommend it.</p>
                 <ul class="nav flex-column mb-2">

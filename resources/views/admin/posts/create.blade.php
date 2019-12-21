@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header bg-primary text-white">Create Content</div>
+                <div class="card-header bg-light">Create Content</div>
                 <div class="card-body">
                     <form action="{{ route('admin.posts.store') }}" method="POST" enctype="multipart/form-data">
                         <div class="form-group row">
