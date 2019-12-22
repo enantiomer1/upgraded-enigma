@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Verify Email', 'header' => 'Please Verify Your Email Address'])
 
 @section('content')
 <div class="container">

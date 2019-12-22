@@ -4,8 +4,30 @@
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="card-body">
+                <h1 class="h4"><span class="title-line2"></span>Get into the steps</h1>
                 <p class="card-text pb-3">
-                    Price point goalposts prethink. Killing it i also believe it's important for every member to be involved and invested in our company and this is one way to do so, driving the initiative forward. 360 degree content marketing pool face time, so can we align on lunch orders goalposts low-hanging fruit i'll book a meeting so we can solution this before the sprint is over yet cannibalize. Time to open the kimono. Streamline driving the initiative forward for we need a recap by eod, cob or whatever comes first low-hanging fruit we have to leverage up the messaging, helicopter view nail jelly to the hothouse wall. Conversational content optimize for search or ensure to follow requirements when developing solutions nor strategic fit. We need to touch base off-line before we fire the new ux experience. Parallel path all hands on deck touch base we don't want to boil the ocean and face time, yet nail it down for killing it. Pig in a python design thinking nor i don't want to drain the whole swamp, i just want to shoot some alligators, make it more corporate please low-hanging fruit helicopter view globalize. That ipo will be a game-changer message the initiative low-hanging fruit. Commitment to the cause herding cats. Make it more corporate please loop back low-hanging fruit let's unpack that later. Regroup strategic high-level 30,000 ft view, so commitment to the cause what's the status on the deliverables for eow? but we need to start advertising on social media nor vertical integration. We're ahead of the curve on that one manage expectations so can you slack it to me?. Baseline c-suite so drink the Kool-aid, nor please use "solutionise" instead of solution ideas! :) so timeframe low-hanging fruit, yet dunder mifflin. To be inspired is to become creative, innovative and energized we want this philosophy to trickle down to all our stakeholders horsehead offer. Nail it down. Please advise soonest gain traction, so my capacity is full please advise soonest for canatics exploratory investigation data masking digitalize.
+                    Working the steps with another member of AA changed my life forever.  Everyone's path to step one is different but accomplishes the same thing:  the willingness to ask another member of the program to guide them through.  Once you have really taken and digested step one, the remainding steps are much easier.  It may not feel like it in the beginning, but if youe are ready, grab a sponsor and don't let go. He or she will guide you through it.</br></br>
+                    I built this website to try and give back what was freely given to me.  If we can help one person in thier AA journey, it's worth the effort.
+                </p>
+            </div>
+        </div>
+         <div class="card mb-3 shadow">
+            <div class="card-body">
+                <h1 class="h4"><span class="title-line2"></span>Favorite Big Book Passage</h1>
+                <p class="card-text pb-3">
+                    There is a solution. Almost none of us liked the selfsearching, the leveling of our pride, the confession of
+                    shortcomings which the process requires for its successful consummation. But we saw that it really
+                    worked in others, and we had come to believe in the hopelessness and futility of life as we had been living
+                    it. When, therefore, we were approached by those in whom the problem had been solved, there was nothing
+                    left for us but to pick up the simple kit of spiritual tools laid at our feet. We have found much of heaven
+                    and we have been rocketed into a fourth dimension of existence of which we had not even dreamed.</br>
+                    <strong>The great fact is just this, and nothing less:</strong> That we have had deep and effective spiritual experiences*
+                    which have revolutionized our whole attitude toward life, toward our fellows and toward God’s universe.
+                    The central fact of our lives today is the absolute certainty that our Creator has entered into our hearts and
+                    lives in a way which is indeed miraculous. He has commenced to accomplish those things for us which
+                    we could never do by ourselves.</br></br>
+                    Alcoholics Anonymous p.25</br>
+                    Copyright © 2019 by Alcoholics Anonymous World Services, Inc.
                 </p>
             </div>
         </div>
