@@ -13,7 +13,7 @@ $factory->define(Post::class, function (Faker $faker) {
         'description' => $faker->sentence($nbWords = 75, $variableNbWords = true),
         'content' => $faker->paragraph($nbSentences = 50, $variableNbSentences = false),
         'section' => 'blog',
-        'image' => 'matrix-code_1575854578.jpg',
+        'image' => 'matrix-code.jpg',
         'alt_text' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'meta_description' => $faker->sentence($nbWords = 30, $variableNbWords = true),
         'published_date' => now(),

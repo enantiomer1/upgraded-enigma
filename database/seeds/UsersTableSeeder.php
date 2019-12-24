@@ -26,12 +26,6 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('admin'),
             'email_verified_at' => now()
         ]);
-        $author = User::create([
-            'name' => 'Author',
-            'email' => 'author@author.com',
-            'password' => bcrypt('author'),
-            'email_verified_at' => now()
-        ]);
         $user = User::create([
             'name' => 'User',
             'email' => 'user@user.com',

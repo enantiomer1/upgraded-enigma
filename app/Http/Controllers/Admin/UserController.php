@@ -13,7 +13,7 @@ class UserController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['auth', 'verified', 'nohistory']);
+        $this->middleware(['auth', 'verified', 'nohistory', 'can:isAdmin']);
     }
 
     /**
@@ -67,10 +67,6 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        if(Gate::denies('isAdmin')){
-            return redirect()->route('admin.users.index')->with('warning', 'You do not have permission to edit users.');
-        }
-
         $roles = Role::all();
 
         return view('admin.users.edit')->with(['user' => $user,'roles' => $roles]);
@@ -101,10 +97,6 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        if(Gate::denies('isAdmin')){
-            return redirect()->route('admin.users.index')->with('warning', 'You do not have permission to delete users.');
-        }
-
         $user->roles()->detach();
         $user->delete();
         return redirect()->route('admin.users.index')->with('success', 'User has been deleted.');

@@ -3,7 +3,7 @@
         <ul class="nav flex-column pt-2">
             <li class="nav-item">
                 @auth
-                <a class="nav-link" href="{{ route('dashboard') }}">
+                <a class="nav-link" href="{{-- {{ route('dashboard') }} --}}">
                     <span class="dot bg-primary"></span>
                     User Profile
                 </a>

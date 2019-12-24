@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Gate;
 
 class DashboardController extends Controller
 {
@@ -13,7 +14,7 @@ class DashboardController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth', 'verified']);
+        $this->middleware(['auth', 'verified', 'can:isAdmin']);
     }
 
     /**
@@ -25,6 +26,6 @@ class DashboardController extends Controller
     {
         $title = 'Dashboard';
         $header = 'Dashboard';
-        return view('pages.dashboard', compact('title', 'header'));
+        return view('admin.dashboard', compact('title', 'header'));
     }
 }

@@ -7,13 +7,14 @@ use App\Post;
 use App\User;
 use Gate;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
 
     public function __construct()
     {
-        $this->middleware(['auth', 'verified', 'nohistory']);
+        $this->middleware(['auth', 'verified', 'nohistory', 'can:isAdmin']);
     }
 
     /**
@@ -171,8 +172,21 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($id)
     {
-        //
+        $post = Post::where('id',$id)->first();
+
+        //Check if post exists before deleting
+        if (!isset($post)){
+            return redirect()->route('admin.posts.index')->with('warning', 'No Content Found');
+        }
+
+        if($post->image != 'noimage.jpg'){
+            // Delete Image
+            Storage::delete('public/img/'.$post->image);
+        }
+
+        $post->delete();
+        return redirect()->route('admin.posts.index')->with('success', 'Content Removed');
     }
 }

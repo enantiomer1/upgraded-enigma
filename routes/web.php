@@ -37,5 +37,6 @@ Route::namespace('Admin')
 ->name('admin.')
 ->group(function(){
     Route::resource('/users', 'UserController', ['except' => ['show']]);
-    Route::resource('/posts', 'PostController');
+    Route::resource('/posts', 'PostController', ['except' => ['show']]);
+    Route::resource('/speakers', 'SpeakerController');
 });
