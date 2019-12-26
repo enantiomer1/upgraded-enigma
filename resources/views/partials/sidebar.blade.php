@@ -64,7 +64,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('speakers') }}">
                     <span class="dot bg-success"></span>
                     Speaker Tapes
                 </a>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Speaker;
 
 class PageController extends Controller
 {
@@ -26,7 +27,7 @@ class PageController extends Controller
         $title = 'Search Results';
         $header = 'Search Results';
         $posts = Post::query()->where('title', 'like', "%{$key}%")->orderBy('published_date', 'desc')->paginate(6);
-        return view('pages.search', compact('posts'));
+        return view('pages.search', compact('title', 'header', 'posts'));
     }
 
     public function search_single($slug)
@@ -99,5 +100,13 @@ class PageController extends Controller
         $header = 'AA Prayers';
         $post = Post::where('slug',$slug)->first();
         return view('pages.prayers_single', compact('title', 'header', 'post'));
+    }
+
+    public function speakers()
+    {
+        $title = 'AA Speakers';
+        $header = 'AA Speakers';
+        $speakers = Speaker::orderBy('created_at','desc')->paginate(12);
+        return view('pages.speakers', compact('title', 'header', 'speakers'));
     }
 }

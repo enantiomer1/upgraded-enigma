@@ -14,6 +14,6 @@ class PostsTableSeeder extends Seeder
     {
         //truncate the table
         Post::truncate();
-        factory(App\Post::class, 20)->create();
+        factory(App\Post::class, 15)->create();
     }
 }

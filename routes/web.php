@@ -28,9 +28,9 @@ Route::get('/literature/{slug}', 'PageController@literature_single')->name('lite
 Route::get('/prayers', 'PageController@prayers')->name('prayers');
 Route::get('/prayers/{slug}', 'PageController@prayers_single')->name('prayers_single');
 
-Auth::routes(['verify' => true]);
+Route::get('/speakers', 'PageController@speakers')->name('speakers');
 
-Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
+Auth::routes(['verify' => true]);
 
 Route::namespace('Admin')
 ->prefix('admin')
@@ -39,4 +39,5 @@ Route::namespace('Admin')
     Route::resource('/users', 'UserController', ['except' => ['show']]);
     Route::resource('/posts', 'PostController', ['except' => ['show']]);
     Route::resource('/speakers', 'SpeakerController');
+    Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
 });

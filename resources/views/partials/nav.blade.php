@@ -44,7 +44,7 @@
                     @can('isAdmin')
                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">User Management</a>
                     <a class="dropdown-item" href="{{ route('admin.posts.index') }}">Content Management</a>
-                    <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
+                    <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard</a>
                     @endcan
                     <a class="dropdown-item" href="{{-- {{ route('dashboard') }} --}}">User Profile</a>
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
