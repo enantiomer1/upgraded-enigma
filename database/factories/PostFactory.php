@@ -9,7 +9,6 @@ $factory->define(Post::class, function (Faker $faker) {
     return [
         'user_id' => $faker->numberBetween($min = 1, $max = 5),
         'title' => $faker->sentence($nbWords = 8, $variableNbWords = true),
-        //'slug' => $faker->slug(),
         'description' => $faker->sentence($nbWords = 75, $variableNbWords = true),
         'content' => $faker->paragraph($nbSentences = 50, $variableNbSentences = false),
         'section' => 'blog',

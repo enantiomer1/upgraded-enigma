@@ -33,7 +33,6 @@ class UsersTableSeeder extends Seeder
             'email_verified_at' => now()
         ]);
         $admin->roles()->attach($adminRole);
-        $author->roles()->attach($authorRole);
         $user->roles()->attach($userRole);
         factory(App\User::class, 3)->create();
     }
