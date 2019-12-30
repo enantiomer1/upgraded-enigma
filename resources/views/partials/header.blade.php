@@ -1,12 +1,10 @@
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mx-3 pt-3 pb-3 border-bottom">
-    <h1 class="h4 mb-2 mb-md-0"><span class="title-line2"></span>{{ $header ?? '' }}</h1>
-    <div class="btn-toolbar mb-2 mb-md-0">
-        <div class="btn-group mr-2">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mx-3 py-2 border-bottom">
+    <h4><span class="title-line2"></span>{{ $header ?? '' }}</h4>
+    <div class="btn-toolbar">
+        <div class="btn-group mx-3 mb-1">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+            <a href="{{ route('blog') }}" class="btn btn-sm btn-outline-secondary">Blog</a>
+            <a href="{{ route('home') }}" class="btn btn-sm btn-outline-secondary">Home</a>
         </div>
-        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-            This week
-        </button>
     </div>
 </div>

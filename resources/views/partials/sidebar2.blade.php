@@ -1,6 +1,6 @@
 <div class="col-lg-4 d-none d-lg-block">
     <div class="card shadow mb-3">
-        <div class="card-header bg-light"><span class="title-line2"></span>Find A Sponsor Near You</div>
+        <div class="card-header bg-light h5"><span class="title-line2"></span>Find A Sponsor Near You</div>
         <div class="card-body pt-3">
             <p class="card-text mb-2">If you are new to the program and do not have a sponsor yet, we highly recommend it.</p>
             <p class="card-text mb-2">The best place to find a sponsor is your local meetings.  Find a meeting close to you that you like, listen to the members as they share, then choose one.</p>
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="card shadow mb-3">
-        <div class="card-header bg-light"><span class="title-line2"></span>Sandy's Corner</div>
+        <div class="card-header bg-light h5"><span class="title-line2"></span>Sandy's Corner</div>
         <div class="card-body pt-3">
             <p class="card-text mb-3">I found Sandy Beach's speaker tapes early in the program and really related to his message and delivery.
             For many years in the Washington DC area he chaired a series of meetings called Saturday Morning Live where each week he spoke on one of the 12 steps.  The way he does it is straghtforward and easy to digest.  For those that are new, take some time to listen and see if you like it too.</br></br>
