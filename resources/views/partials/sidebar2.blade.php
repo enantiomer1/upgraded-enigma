@@ -7,7 +7,7 @@
             <p class="card-text mb-2">Just remember:  there is no wrong choice, get a sponsor and get into the steps.</p>
             <p class="card-text mb-2">This task can seem difficult, it is NOT.  AA members are there to help and are always looking for newcomers to work with.</p>
             <p class="card-text mb-3">We are working on a sponsor finder App that you can search for AA members close to you that are also signed up and looking for sponsees.</p>
-            <a href="#" class="btn btn-sm btn-primary ml-2 shadow">Sponsor Search Coming Soon</a>
+            <a href="#" class="btn btn-sm btn-outline-warning ml-2 shadow">Sponsor Search Coming Soon</a>
         </div>
     </div>
     <div class="card shadow mb-3">
@@ -19,7 +19,7 @@
             Sandy passed away in September of 2014 just 10 weeks shy of his 50th year of continous sobriety.</br></br>
             Click the button below to go to a collection of his tapes.
             </p>
-            <a href="#" class="btn btn-sm btn-primary ml-2 shadow">Sandy Beach</a>
+            <a href="#" class="btn btn-sm btn-outline-warning ml-2 shadow">Sandy Beach</a>
         </div>
     </div>
 </div>

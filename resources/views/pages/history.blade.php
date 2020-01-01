@@ -21,7 +21,7 @@
                             </div>
                         </h5>
                         <p class="card-text border-bottom pb-3">{{ $post->description }}</p>
-                        <p class="card-text"><small class="text-muted">Published {{ $post->published_date->format('m/d/Y') }}</small><a href="{{ route('history_single', $post->slug) }}" class="btn btn-sm btn-primary ml-4 shadow">Read More</a></p>
+                        <p class="card-text"><small class="text-muted">Published {{ $post->published_date->format('m/d/Y') }}</small><a href="{{ route('history_single', $post->slug) }}" class="btn btn-sm btn-outline-warning ml-4 shadow">Read More</a></p>
                     </div>
                 </div>
             </div>

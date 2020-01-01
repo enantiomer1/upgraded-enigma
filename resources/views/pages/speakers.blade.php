@@ -32,8 +32,7 @@
                                 <td>{{ $speaker->file }}</td>
                                 <td>{{ $speaker->date->format('m/d/Y') }}</td>
                                 <td>
-
-                                    <a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-primary ml-2">Listen</a>
+                                    <a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-outline-warning ml-2">Listen</a>
                                 </td>
                             </tr>
                             @endforeach

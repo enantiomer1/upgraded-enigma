@@ -3,8 +3,8 @@
     <div class="btn-toolbar">
         <div class="btn-group mx-3 mb-1">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <a href="{{ route('blog') }}" class="btn btn-sm btn-outline-secondary">Blog</a>
             <a href="{{ route('home') }}" class="btn btn-sm btn-outline-secondary">Home</a>
+            <a href="{{ route('blog') }}" class="btn btn-sm btn-outline-secondary">Blog</a>
         </div>
     </div>
 </div>

@@ -38,6 +38,6 @@ Route::namespace('Admin')
 ->group(function(){
     Route::resource('/users', 'UserController', ['except' => ['show']]);
     Route::resource('/posts', 'PostController', ['except' => ['show']]);
-    Route::resource('/speakers', 'SpeakerController');
+    Route::resource('/speakers', 'SpeakerController', ['except' => ['show']]);
     Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
 });
