@@ -1986,16 +1986,16 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #DFD7CA;
+  border-top: 1px solid #98978B;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #DFD7CA;
+  border-bottom: 2px solid #98978B;
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #DFD7CA;
+  border-top: 2px solid #98978B;
 }
 
 .table-sm th,
@@ -2004,12 +2004,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #DFD7CA;
+  border: 1px solid #98978B;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #DFD7CA;
+  border: 1px solid #98978B;
 }
 
 .table-bordered thead th,
@@ -2233,7 +2233,7 @@ pre code {
 .table .thead-light th {
   color: #495057;
   background-color: #F8F5F0;
-  border-color: #DFD7CA;
+  border-color: #98978B;
 }
 
 .table-dark {
@@ -3819,16 +3819,16 @@ input[type=button].btn-block {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #8E8C84;
+  color: #f8f9fa;
   text-decoration: none;
-  background-color: #F8F5F0;
+  background-color: #325D88;
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
   color: #8E8C84;
   text-decoration: none;
-  background-color: #F8F5F0;
+  background-color: #325D88;
 }
 
 .dropdown-item.disabled,
@@ -7413,23 +7413,23 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid #DFD7CA !important;
+  border: 1px solid #98978B !important;
 }
 
 .border-top {
-  border-top: 1px solid #DFD7CA !important;
+  border-top: 1px solid #98978B !important;
 }
 
 .border-right {
-  border-right: 1px solid #DFD7CA !important;
+  border-right: 1px solid #98978B !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #DFD7CA !important;
+  border-bottom: 1px solid #98978B !important;
 }
 
 .border-left {
-  border-left: 1px solid #DFD7CA !important;
+  border-left: 1px solid #98978B !important;
 }
 
 .border-0 {
@@ -11347,12 +11347,12 @@ a.text-dark:focus {
   .table-dark td,
   .table-dark thead th,
   .table-dark tbody + tbody {
-    border-color: #DFD7CA;
+    border-color: #98978B;
   }
 
   .table .thead-dark th {
     color: inherit;
-    border-color: #DFD7CA;
+    border-color: #98978B;
   }
 }
 

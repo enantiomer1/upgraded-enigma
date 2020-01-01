@@ -31,11 +31,11 @@
                                 <td>{{ $user->email }}</td>
                                 <td>{{ implode(', ',$user->roles()->get()->pluck('name')->toArray()) }}</td>
                                 <td>
-                                    <a href="{{ route('admin.users.edit', $user->id) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-info">Edit</button></a>
+                                    <a href="{{ route('admin.users.edit', $user->id) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-sm btn-info">Edit</button></a>
                                     <form action="{{ route('admin.users.destroy', $user) }}" method="POST" class="float-left">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                                     </form>
                                 </td>
                             </tr>

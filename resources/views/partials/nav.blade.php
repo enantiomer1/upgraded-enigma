@@ -7,15 +7,14 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('speakers') }}">Speakers</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    AA Stuff
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AA Stuff</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('history') }}">AA History</a>
                     <a class="dropdown-item" href="{{ route('literature') }}">AA Literature</a>
                     <a class="dropdown-item" href="{{ route('prayers') }}">AA Prayers</a>
+                    <a class="dropdown-item" href="{{ route('speakers') }}">Speaker Tapes</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Find a Sponsor</a>
                 </div>
@@ -44,6 +43,7 @@
                     @can('isAdmin')
                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">User Management</a>
                     <a class="dropdown-item" href="{{ route('admin.posts.index') }}">Content Management</a>
+                    <a class="dropdown-item" href="{{ route('admin.speakers.index') }}">Speaker Management</a>
                     <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard</a>
                     @endcan
                     <a class="dropdown-item" href="{{-- {{ route('dashboard') }} --}}">User Profile</a>
