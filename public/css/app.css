@@ -11523,6 +11523,11 @@ a.text-dark:focus {
   color: #b9a78a;
 }
 
+audio {
+  width: 250px;
+  height: 42px;
+}
+
 .bg-dark {
   background-color: #302c4e !important;
 }

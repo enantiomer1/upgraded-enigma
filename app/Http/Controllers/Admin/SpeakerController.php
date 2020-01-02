@@ -26,7 +26,7 @@ class SpeakerController extends Controller
     {
         $title = 'Speaker Tape Management';
         $header = 'Speaker Tape Management';
-        $speakers = Speaker::orderBy('date','desc')->paginate(10);
+        $speakers = Speaker::orderBy('created_at','desc')->paginate(10);
         return view('admin.speakers.index', compact('title', 'header', 'speakers'));
     }
 
@@ -51,11 +51,9 @@ class SpeakerController extends Controller
     public function store(Request $request)
     {
         request()->validate([
-            'name' => ['required', 'min:3', 'max:155'],
-            'title' => ['required', 'min:3', 'max:255'],
-            'place' => ['required', 'min:3', 'max:75'],
+            'speaker_name' => ['required', 'min:3', 'max:155'],
+            'description' => ['required', 'min:3', 'max:191'],
             'file' => ['required', 'file', 'max:9999'],
-            'date' => 'required',
         ]);
 
         // Handle File Upload
@@ -76,11 +74,9 @@ class SpeakerController extends Controller
 
         // Create Post
         $speaker = new Speaker;
-        $speaker->name = $request->name;
-        $speaker->title = $request->title;
-        $speaker->place = $request->place;
+        $speaker->speaker_name = $request->speaker_name;
+        $speaker->description = $request->description;
         $speaker->file = $fileNameToStore;
-        $speaker->date = $request->date;
         $speaker->save();
 
         return redirect()->route('admin.speakers.index')->with('success', 'Speaker Tape has been created.');
@@ -92,7 +88,7 @@ class SpeakerController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(Speaker $speaker)
     {
         //
     }
@@ -120,13 +116,11 @@ class SpeakerController extends Controller
      */
     public function update(Request $request, $id)
     {
-
         request()->validate([
-            'name' => ['required', 'min:3', 'max:155'],
-            'title' => ['required', 'min:3', 'max:255'],
-            'place' => ['required', 'min:3', 'max:75'],
-            'date' => 'required',
+            'speaker_name' => ['required', 'min:3', 'max:155'],
+            'description' => ['required', 'min:3', 'max:191'],
         ]);
+
         $speaker = Speaker::where('id',$id)->first();
         // Handle File Upload
         if($request->hasFile('file')){
@@ -141,16 +135,14 @@ class SpeakerController extends Controller
             // Upload Image
             $path = $request->file('file')->storeAs('public/speaker', $fileNameToStore);
             // Delete old file if exists
-            Storage::delete('public/speaker/'.$post->file);
+            Storage::delete('public/speaker/'.$speaker->file);
         }
 
-        $speaker->name = $request->name;
-        $speaker->title = $request->title;
-        $speaker->place = $request->place;
+        $speaker->speaker_name = $request->speaker_name;
+        $speaker->description = $request->description;
         if($request->hasFile('file')){
             $speaker->file = $fileNameToStore;
         }
-        $speaker->date = $request->date;
         $speaker->save();
 
         return redirect()->route('admin.speakers.index')->with('success', 'Speaker Tape has been updated.');

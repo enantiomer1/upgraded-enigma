@@ -2,7 +2,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <div class="card shadow">
                 <div class="card-header bg-light">
                     <div class="row align-items-center">
@@ -18,22 +18,16 @@
                     <table class="table table-sm table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Place</th>
-                                 <th scope="col">File</th>
-                                <th scope="col">Date</th>
+                                <th scope="col">Speaker Name</th>
+                                <th scope="col">Description</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($speakers as $speaker)
                             <tr>
-                                <td>{{ $speaker->name }}</td>
-                                <td>{{ $speaker->title }}</td>
-                                <td>{{ $speaker->place }}</td>
-                                <td>{{ $speaker->file }}</td>
-                                <td>{{ $speaker->date->format('m/d/Y') }}</td>
+                                <td>{{ $speaker->speaker_name }}</td>
+                                <td>{{ $speaker->description }}</td>
                                 <td>
                                     <a href="{{ route('admin.speakers.edit', $speaker->id) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-sm btn-info">Edit</button></a>
                                     <form action="{{ route('admin.speakers.destroy', $speaker->id) }}" method="POST" class="float-left">

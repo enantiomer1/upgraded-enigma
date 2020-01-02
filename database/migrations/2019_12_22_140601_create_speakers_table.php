@@ -15,11 +15,9 @@ class CreateSpeakersTable extends Migration
     {
         Schema::create('speakers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->default('');
-            $table->string('title')->default('');
-            $table->string('place')->default('');
+            $table->string('speaker_name')->default('');
+            $table->string('description')->default('');
             $table->string('file')->nullable();
-            $table->datetime('date')->nullable();
             $table->timestamps();
         });
     }

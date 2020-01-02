@@ -7,10 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Speaker::class, function (Faker $faker) {
     return [
-        'name' => $faker->name(),
-        'title' => $faker->sentence($nbWords = 5, $variableNbWords = true),
-        'place' => $faker->sentence($nbWords = 5, $variableNbWords = true),
-        'date' => now(),
+        'speaker_name' => $faker->name(),
+        'description' => $faker->sentence($nbWords = 5, $variableNbWords = true),
         'file' => 'sandyb_step1_94.mp3',
     ];
 });

@@ -8,10 +8,10 @@
                 <div class="card-body">
                     <form action="{{ route('admin.speakers.store') }}" method="POST" enctype="multipart/form-data">
                         <div class="form-group row">
-                            <label for="name" class="col-md-2 col-form-label text-md-right">Name</label>
+                            <label for="speaker_name" class="col-md-2 col-form-label text-md-right">Speaker Name</label>
                             <div class="col-md-8">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" placeholder="{{ ('Enter Name') }}" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                @error('name')
+                                <input id="speaker_name" type="text" class="form-control @error('speaker_name') is-invalid @enderror" placeholder="{{ ('Enter Speaker Name') }}" name="speaker_name" value="{{ old('speaker_name') }}" required autocomplete="speaker_name" autofocus>
+                                @error('speaker_name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -19,21 +19,10 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="title" class="col-md-2 col-form-label text-md-right">Title</label>
+                            <label for="description" class="col-md-2 col-form-label text-md-right">Description</label>
                             <div class="col-md-8">
-                                <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" placeholder="{{ ('Enter Title') }}" name="title" value="{{ old('title') }}" required autocomplete="title" autofocus>
-                                @error('title')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="place" class="col-md-2 col-form-label text-md-right">Place</label>
-                            <div class="col-md-8">
-                                <input id="place" type="text" class="form-control @error('place') is-invalid @enderror" placeholder="{{ ('Enter Place') }}" name="place" value="{{ old('place') }}" required autocomplete="place" autofocus>
-                                @error('place')
+                                <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" placeholder="{{ ('Enter Description') }}" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
+                                @error('description')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -45,17 +34,6 @@
                             <div class="col-md-8">
                                 <input id="file" type="file" class="form-control-file @error('file') is-invalid @enderror" name="file" value="{{ old('file') }}" required autocomplete="file" autofocus>
                                 @error('file')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="date" class="col-md-2 col-form-label text-md-right">Date</label>
-                            <div class="col-md-8">
-                                <input id="date" type="text" class="form-control @error('date') is-invalid @enderror" placeholder="{{ ('Enter Date YYYY-MM-DD') }}" name="date" value="{{ old('date') }}" required autocomplete="date" autofocus>
-                                @error('date')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
