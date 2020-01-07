@@ -46,7 +46,7 @@
                     <a class="dropdown-item" href="{{ route('admin.speakers.index') }}">Speaker Management</a>
                     <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard</a>
                     @endcan
-                    <a class="dropdown-item" href="{{-- {{ route('dashboard') }} --}}">User Profile</a>
+                    <a class="dropdown-item" href="{{ route('profile.edit') }}">User Profile</a>
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

@@ -32,6 +32,10 @@ Route::get('/speakers', 'PageController@speakers')->name('speakers');
 
 Auth::routes(['verify' => true]);
 
+Route::get('/profile', 'ProfileController@edit')->name('profile.edit');
+Route::put('/profile', 'ProfileController@update')->name('profile.update');
+Route::put('/profile/password', 'ProfileController@password')->name('profile.password');
+
 Route::namespace('Admin')
 ->prefix('admin')
 ->name('admin.')

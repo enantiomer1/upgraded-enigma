@@ -3,7 +3,7 @@
         <ul class="nav flex-column pt-2">
             <li class="nav-item">
                 @auth
-                <a class="nav-link" href="{{-- {{ route('dashboard') }} --}}">
+                <a class="nav-link" href="{{ route('profile.edit') }}">
                     <span class="dot bg-primary"></span>
                     User Profile
                 </a>
@@ -70,5 +70,9 @@
                 </a>
             </li>
         </ul>
+         <hr class="my-3 mx-3">
+         <div class="p-4" style="position: absolute; bottom: 0;">
+            <img src="{{ asset('img/logo.png') }}" class="img-fluid pr-3" alt="Step Depot">StepDepot.Net &copy;2020
+         </div>
     </div>
 </nav>
