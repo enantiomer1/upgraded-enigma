@@ -36,7 +36,7 @@
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                     @include('partials.header')
                     @include('partials.alerts')
-                    <div class="container-fluid pt-4">
+                    <div class="container-fluid py-4">
                     @yield('content')
                     </div>
                 </main>

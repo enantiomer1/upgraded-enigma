@@ -11,7 +11,7 @@ class ContactController extends Controller
     {
     	$title = 'Contact';
         $header = 'Contact Us';
-    	return view('contact.show');
+    	return view('contact.show', compact('title', 'header'));
     }
 
      public function send(Request $request)

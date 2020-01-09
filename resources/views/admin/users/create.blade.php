@@ -7,7 +7,7 @@
                 <div class="card-header bg-light">Create User</div>
                 <div class="card-body">
                     <form action="{{ route('admin.users.store') }}" method="POST">
-                        <div class="form-group row">
+                        <div class="form-group row mt-2">
                             <label for="name" class="col-md-2 col-form-label text-md-right">Name</label>
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Enter Name" required autocomplete="name" autofocus>
@@ -59,7 +59,9 @@
                                 @endforeach
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary ml-4">Create User</button>
+                        <div class="col-md-6 offset-md-2">
+                            <button type="submit" class="btn btn-primary">Create User</button>
+                        </div>
                     </form>
                 </div>
             </div>

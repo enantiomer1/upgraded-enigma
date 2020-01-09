@@ -44,7 +44,9 @@
                         </div>
                         @csrf
                         @method('POST')
-                        <button type="submit" class="btn btn-primary ml-4">Send Mail</button>
+                        <div class="col-md-8 offset-md-2">
+                            <button type="submit" class="btn btn-primary">Send Mail</button>
+                        </div>
                     </form>
                 </div>
             </div>

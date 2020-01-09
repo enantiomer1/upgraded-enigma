@@ -106,7 +106,9 @@
                         </div>
                         @csrf
                         @method('POST')
-                        <button type="submit" class="btn btn-primary ml-4">Create Post</button>
+                        <div class="col-md-6 offset-md-2">
+                            <button type="submit" class="btn btn-primary">Create Post</button>
+                        </div>
                     </form>
                 </div>
             </div>

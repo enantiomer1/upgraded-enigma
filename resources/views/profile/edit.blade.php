@@ -32,7 +32,7 @@
                         </div>
                         @csrf
                         @method('PUT')
-                        <div class="text-center">
+                        <div class="col-md-6 offset-md-3">
                             <button type="submit" class="btn btn-info">Update Info</button>
                         </div>
                     </form>
@@ -74,7 +74,7 @@
                         </div>
                         @csrf
                         @method('PUT')
-                        <div class="text-center">
+                        <div class="col-md-6 offset-md-3">
                             <button type="submit" class="btn btn-info">Change Password</button>
                         </div>
                     </form>

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'User Management', 'header' => 'User Management'])
+@extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -10,12 +10,12 @@
                             <h4 class="mb-0">{{ __('Users') }}</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="{{ route('admin.users.create') }}" class="btn btn-sm btn-success">{{ __('Add user') }}</a>
+                            <a href="{{ route('admin.users.create') }}" class="btn btn-sm btn-secondary">{{ __('Add user') }}</a>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <table class="table table-sm table-striped table-bordered">
+                    <table class="table table-sm table-striped table-bordered mt-2">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>

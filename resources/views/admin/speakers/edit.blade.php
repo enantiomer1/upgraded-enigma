@@ -1,4 +1,4 @@
-@extends('layouts.app-post')
+@extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -42,7 +42,9 @@
                         </div>
                         @csrf
                         @method('PUT')
-                        <button type="submit" class="btn btn-primary ml-4">Update</button>
+                        <div class="col-md-6 offset-md-2">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
                     </form>
                 </div>
             </div>

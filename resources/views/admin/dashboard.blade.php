@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <h5 class="card-title">My Profile</h5>
                     <p class="card-text">Manage Your Account Settings</p>
-                    <a href="{{ route('admin.users.index') }}" class="btn btn-primary">User Profile</a>
+                    <a href="{{ route('profile.edit') }}" class="btn btn-primary">User Profile</a>
                 </div>
             </div>
         </div>
