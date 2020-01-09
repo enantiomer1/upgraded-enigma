@@ -30,6 +30,9 @@ Route::get('/prayers/{slug}', 'PageController@prayers_single')->name('prayers_si
 
 Route::get('/speakers', 'PageController@speakers')->name('speakers');
 
+Route::get('contact', 'ContactController@show')->name('contact');
+Route::post('contact/send', 'ContactController@send')->name('contact.send');
+
 Auth::routes(['verify' => true]);
 
 Route::get('/profile', 'ProfileController@edit')->name('profile.edit');

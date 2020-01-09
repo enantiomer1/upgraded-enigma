@@ -20,7 +20,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                <a class="nav-link" href="{{ route('contact') }}" tabindex="-1" aria-disabled="true">Contact</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
