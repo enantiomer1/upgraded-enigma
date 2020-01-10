@@ -13,6 +13,9 @@
 
 Route::get('/', 'PageController@home')->name('home');
 
+Route::get('/preamble', 'PageController@preamble')->name('preamble');
+Route::get('/12steps', 'PageController@steps')->name('12steps');
+
 Route::get('/search', 'PageController@search')->name('search');
 Route::get('/search/{slug}', 'PageController@search_single')->name('search_single');
 

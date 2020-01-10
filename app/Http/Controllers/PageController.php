@@ -38,6 +38,20 @@ class PageController extends Controller
         return view('pages.search_single', compact('title', 'header', 'post'));
     }
 
+    public function preamble()
+    {
+        $title = 'Preamble';
+        $header = 'The AA Preamble and its Origins';
+        return view('pages.preamble', compact('title', 'header'));
+    }
+
+    public function steps()
+    {
+        $title = '12 Steps';
+        $header = 'The AA 12 Steps';
+        return view('pages.12steps', compact('title', 'header'));
+    }
+
     public function blog()
     {
         $title = 'Blog';

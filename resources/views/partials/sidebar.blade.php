@@ -10,13 +10,13 @@
                 @endauth
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('preamble') }}">
                     <span class="dot bg-info"></span>
                     AA Preamble
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('12steps') }}">
                     <span class="dot bg-success"></span>
                     The 12 Steps
                 </a>

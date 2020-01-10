@@ -5,7 +5,7 @@
         <div class="card mb-3 shadow">
             <div class="card-body">
                 <h5 class="pb-2 border-bottom"><span class="title-line2"></span>Get into the steps</h5>
-                <p class="card-text pb-3">
+                <p class="card-text py-2">
                     Working the steps with another member of AA changed my life forever. Everyone's path to step one is different but accomplishes the same thing: the willingness to ask another member of the program to guide them through. Once you have really taken and digested step one, the remainding steps are much easier. It may not feel like it in the beginning, but if you're are ready, grab a sponsor and don't let go. He or she will guide you through it.</br></br>
                     I built this website to try and give back what was freely given to me. If we can help one person in thier AA journey, it's worth the effort.
                 </p>
@@ -14,7 +14,7 @@
         <div class="card mb-3 shadow">
             <div class="card-body">
                 <h5 class="pb-2 border-bottom"><span class="title-line2"></span>Favorite Big Book Passage</h5>
-                <p class="card-text pb-3">
+                <p class="card-text py-2">
                     There is a solution. Almost none of us liked the selfsearching, the leveling of our pride, the confession of
                     shortcomings which the process requires for its successful consummation. But we saw that it really
                     worked in others, and we had come to believe in the hopelessness and futility of life as we had been living
@@ -43,7 +43,7 @@
                 <div class="col-md-8">
                     <div class="card-body p-2">
                         <h5 class="card-title border-bottom pb-2">{{ $post->title }}</h5>
-                        <p class="card-text border-bottom pb-2">{{ $post->description }}</p>
+                        <p class="card-text border-bottom pb-3">{{ $post->description }}</p>
                         <p class="card-text"><small class="text-muted">Published {{ $post->published_date->format('m/d/Y') }}</small><a href="{{ route('blog_single', $post->slug) }}" class="btn btn-sm btn-outline-warning ml-4 shadow">Read More</a></p>
                     </div>
                 </div>

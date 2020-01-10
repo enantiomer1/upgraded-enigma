@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <div class="card-body">
                         <h4 class="card-title border-bottom pb-2">{{ $post->title }}</h4>
-                        <div class="border-bottom pb-3">{!! $post->content !!}</div>
+                        <div class="border-bottom pt-2 pb-3">{!! $post->content !!}</div>
                         <h6 class="card-text pt-3"><span class="title-line2"></span>Published {{ $post->published_date->format('m/d/Y') }}</h6>
                     </div>
                 </div>
