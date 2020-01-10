@@ -16,11 +16,11 @@
                     <tr>
                         <td>{{ $speaker->speaker_name }}</td>
                         <td>{{ $speaker->description }}</td>
-                        <td>{{-- <a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-outline-warning ml-2">Listen</a> --}}
-                            <audio controls>
+                        <td><a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-outline-warning ml-2">Listen / Download</a>
+                            {{-- <audio controls>
                                 <source src="/storage/speaker/{{$speaker->file}}" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio> --}}
                         </td>
                     </tr>
                     @endforeach
