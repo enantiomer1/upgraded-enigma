@@ -68,7 +68,7 @@ class ProfileController extends Controller
             $user->fill(['password' => Hash::make($request->password)])->save();
             return redirect()->route('profile.edit')->with('success', 'Your Password has been updated.');
         } else {
-        return redirect()->route('profile.edit')->with('warning', 'Password does not match what is in the database.');
+        return redirect()->route('profile.edit')->with('warning', 'Current password entered does not match what is in the database.');
         }
     }
 }

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+<div class="row m-0">
     <div class="col-md-12 col-lg-8">
-        <div class="card mb-3 shadow">
+        <div class="card mb-4 shadow">
             <div class="card-body">
                 <h5 class="pb-2 border-bottom"><span class="title-line2"></span>Get into the steps</h5>
                 <p class="card-text py-2">

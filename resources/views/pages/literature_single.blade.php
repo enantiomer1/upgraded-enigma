@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+<div class="row m-0">
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="row no-gutters">

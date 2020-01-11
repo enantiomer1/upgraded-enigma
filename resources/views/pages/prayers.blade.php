@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
+<div class="row m-0">
     <div class="col-md-12 col-lg-8">
         @foreach ($posts as $post)
-       <div class="card mt-2 p-2 mb-4 shadow">
+       <div class="card p-2 mb-4 shadow">
             <div class="row no-gutters">
                 <div class="col-md-4">
                     <div class="card-body p-2">

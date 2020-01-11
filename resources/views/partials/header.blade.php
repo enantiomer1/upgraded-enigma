@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mx-3 py-2 border-bottom">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center ml-4 mr-3 py-2 border-bottom">
     <h4><span class="title-line2"></span>{{ $header ?? '' }}</h4>
     <div class="btn-toolbar">
         <div class="btn-group mx-3 mb-1">
