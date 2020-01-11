@@ -33,10 +33,10 @@
         <div class="container-fluid">
             <div class="row">
                 @include('partials.sidebar')
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-2 px-sm-4">
                     @include('partials.header')
                     @include('partials.alerts')
-                    <div class="container-fluid py-4">
+                    <div class="container-fluid py-4 px-0">
                     @yield('content')
                     </div>
                 </main>

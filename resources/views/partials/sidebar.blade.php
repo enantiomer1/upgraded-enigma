@@ -72,7 +72,7 @@
         </ul>
          <hr class="my-3 mx-3">
          <div class="p-4" style="position: absolute; bottom: 0;">
-            <img src="{{ asset('img/logo.png') }}" class="img-fluid pr-3" alt="Step Depot">StepDepot.Net &copy;2020
+            <img src="{{ asset('img/logo.png') }}" class="img-fluid pr-3" alt="Step Depot">StepDepot.Net
          </div>
     </div>
 </nav>

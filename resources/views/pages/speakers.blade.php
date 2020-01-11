@@ -2,13 +2,13 @@
 @section('content')
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-8">
             <table class="table table-sm table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">Speaker</th>
                         <th scope="col">Description</th>
-                        <th scope="col">Play / Download</th>
+                        <th scope="col">Play/Dnld</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -16,7 +16,7 @@
                     <tr>
                         <td>{{ $speaker->speaker_name }}</td>
                         <td>{{ $speaker->description }}</td>
-                        <td><a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-outline-warning ml-2">Listen / Download</a>
+                        <td><a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-outline-warning ml-2">Listen</a>
                             {{-- <audio controls>
                                 <source src="/storage/speaker/{{$speaker->file}}" type="audio/mpeg">
                                 Your browser does not support the audio element.
