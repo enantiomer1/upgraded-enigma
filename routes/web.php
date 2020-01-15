@@ -33,6 +33,8 @@ Route::get('/prayers', 'PageController@prayers')->name('prayers');
 Route::get('/prayers/{slug}', 'PageController@prayers_single')->name('prayers_single');
 
 Route::get('/speakers', 'SpeakerController@speakers')->name('speakers');
+Route::get('/speakers/index', 'SpeakerController@index')->name('speakers.all');
+Route::get('/speakers/sandyb', 'SpeakerController@sandyb')->name('speakers.sandy');
 
 Route::get('contact', 'ContactController@show')->name('contact');
 Route::post('contact/send', 'ContactController@send')->name('contact.send');
