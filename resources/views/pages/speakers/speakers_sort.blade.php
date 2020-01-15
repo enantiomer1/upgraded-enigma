@@ -15,7 +15,7 @@
                 <tr>
                     <td>{{ $speaker->speaker_name }}</td>
                     <td>{{ $speaker->description }}</td>
-                    <td><a href="/storage/speaker/{{$speaker->file}}" class="btn btn-sm btn-outline-warning ml-2">Listen</a>
+                    <td><a href="/storage/speaker/{{$speaker->file}}" target="_blank" class="btn btn-sm btn-outline-warning ml-2">Listen</a>
                         {{-- <audio controls>
                             <source src="/storage/speaker/{{$speaker->file}}" type="audio/mpeg">
                             Your browser does not support the audio element.

@@ -12,10 +12,10 @@ $factory->define(Post::class, function (Faker $faker) {
         'description' => $faker->sentence($nbWords = 75, $variableNbWords = true),
         'content' => $faker->paragraph($nbSentences = 50, $variableNbSentences = false),
         'section' =>$faker->randomElement($array = array ('blog','history','literature', 'prayers')),
-        //'section' => 'blog',
         'image' => 'matrix-code.jpg',
         'alt_text' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'meta_description' => $faker->sentence($nbWords = 30, $variableNbWords = true),
+        'status' =>$faker->randomElement($array = array ('draft','published')),
         'published_date' => now(),
     ];
 });

@@ -24,6 +24,7 @@ class CreatePostsTable extends Migration
             $table->string('image')->nullable();
             $table->string('alt_text')->nullable();
             $table->text('meta_description')->nullable();
+            $table->string('status')->default('draft');
             $table->datetime('published_date')->nullable();
             $table->timestamps();
         });

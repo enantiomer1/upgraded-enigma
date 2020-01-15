@@ -15,6 +15,7 @@ Route::get('/', 'PageController@home')->name('home');
 
 Route::get('/preamble', 'PageController@preamble')->name('preamble');
 Route::get('/12steps', 'PageController@steps')->name('12steps');
+Route::get('/12traditions', 'PageController@traditions')->name('12traditions');
 
 Route::get('/search', 'PageController@search')->name('search');
 Route::get('/search/{slug}', 'PageController@search_single')->name('search_single');
@@ -31,7 +32,7 @@ Route::get('/literature/{slug}', 'PageController@literature_single')->name('lite
 Route::get('/prayers', 'PageController@prayers')->name('prayers');
 Route::get('/prayers/{slug}', 'PageController@prayers_single')->name('prayers_single');
 
-Route::get('/speakers', 'PageController@speakers')->name('speakers');
+Route::get('/speakers', 'SpeakerController@speakers')->name('speakers');
 
 Route::get('contact', 'ContactController@show')->name('contact');
 Route::post('contact/send', 'ContactController@send')->name('contact.send');

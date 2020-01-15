@@ -26,8 +26,9 @@ class PostController extends Controller
     {
         $title = 'Content Management';
         $header = 'Content Management';
-        $posts = Post::orderBy('published_date','desc')->paginate(10);
-        return view('admin.posts.index', compact('title', 'header', 'posts'));
+        $drafts = Post::where('status', 'draft')->orderBy('published_date','desc')->get();
+        $published = Post::where('status', 'published')->orderBy('published_date','desc')->get();
+        return view('admin.posts.index', compact('title', 'header', 'drafts', 'published'));
     }
 
     /**
@@ -58,6 +59,7 @@ class PostController extends Controller
             'image' => ['required', 'image', 'max:4999'],
             'alt_text' => ['required', 'min:3', 'max:75'],
             'meta_description' => ['required', 'min:3', 'max:155'],
+            'status' => 'required',
             'published_date' => 'required',
         ]);
 
@@ -87,6 +89,7 @@ class PostController extends Controller
         $post->image = $fileNameToStore;
         $post->alt_text = $request->alt_text;
         $post->meta_description = $request->meta_description;
+        $post->status = $request->status;
         $post->published_date = $request->published_date;
         $post->save();
 
@@ -132,7 +135,9 @@ class PostController extends Controller
             'title' => ['required', 'min:3', 'max:255'],
             'description' => 'required',
             'content' => ['required', 'min:3'],
+            'status' => 'required',
         ]);
+
         $post = Post::where('slug',$slug)->first();
         // Handle File Upload
         if($request->hasFile('image')){
@@ -159,6 +164,7 @@ class PostController extends Controller
         }
         $post->alt_text = $request->alt_text;
         $post->meta_description = $request->meta_description;
+        $post->status = $request->status;
         $post->published_date = $request->published_date;
         $post->save();
 

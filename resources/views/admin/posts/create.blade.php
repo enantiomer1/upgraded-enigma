@@ -94,6 +94,20 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="status" class="col-md-2 col-form-label text-md-right">Status</label>
+                            <div class="col-md-8">
+                                <select id="status" class="form-control @error('status') is-invalid @enderror" name="status" value="{{ old('status') }}" required autocomplete="status" autofocus>
+                                    <option>draft</option>
+                                    <option>published</option>
+                                </select>
+                                @error('status')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="published_date" class="col-md-2 col-form-label text-md-right">Published Date</label>
                             <div class="col-md-8">
                                 <input id="published_date" type="text" class="form-control @error('published_date') is-invalid @enderror" name="published_date" value="{{ old('published_date') }}" required autocomplete="published_date" autofocus>

@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header bg-light border-bottom">Send us a Note</div>
+                <div class="card-header bg-light border-bottom h5">Send us a Note</div>
                 <div class="card-body">
                     <form action="{{ route('contact.send') }}" method="POST" enctype="multipart/form-data">
                         <div class="form-group row">

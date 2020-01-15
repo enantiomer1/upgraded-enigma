@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('12traditions') }}">
                     <span class="dot bg-warning"></span>
                     The 12 Traditions
                 </a>

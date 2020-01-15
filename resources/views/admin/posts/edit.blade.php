@@ -99,6 +99,19 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="status" class="col-md-2 col-form-label text-md-right">Status</label>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input type="checkbox" name="status" value="draft" @if($post->status === 'draft') checked @endif>
+                                    <label>Draft</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="status" value="published" @if($post->status === 'published') checked @endif>
+                                    <label>Published</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="published_date" class="col-md-2 col-form-label text-md-right">Published Date</label>
                             <div class="col-md-8">
                                 <input id="published_date" type="text" class="form-control @error('published_date') is-invalid @enderror" name="published_date" value="{{ $post->published_date }}" required autocomplete="published_date" autofocus>

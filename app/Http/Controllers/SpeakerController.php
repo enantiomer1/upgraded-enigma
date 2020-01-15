@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Speaker;
+
+class SpeakerController extends Controller
+{
+    public function speakers()
+    {
+        $title = 'AA Speakers';
+        $header = 'AA Speakers';
+        return view('pages.speakers.speakers', compact('title', 'header'));
+    }
+
+    public function speakers_all()
+    {
+        $title = 'AA Speakers';
+        $header = 'AA Speakers';
+        $speakers = Speaker::orderBy('created_at','desc')->paginate(25);
+        return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
+    }
+}
