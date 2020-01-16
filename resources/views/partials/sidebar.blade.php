@@ -28,12 +28,6 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('history') }}">
-                    <span class="dot bg-primary"></span>
-                    AA History
-                </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="{{ route('literature') }}">
                     <span class="dot bg-info"></span>
                     AA Literature
@@ -46,21 +40,15 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('history') }}">
+                    <span class="dot bg-primary"></span>
+                    AA History
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="http://www.aagrapevine.org/" target="_blank">
                     <span class="dot bg-success"></span>
                     AA Grapevine
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="dot bg-dark"></span>
-                    Joe And Charlie
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="dot bg-secondary"></span>
-                    Sandy Beach
                 </a>
             </li>
             <li class="nav-item">
@@ -70,7 +58,7 @@
                 </a>
             </li>
         </ul>
-         <hr class="my-3 mx-3">
+         <hr class="my-3 mx-3 border-bottom">
          <div class="p-4" style="position: absolute; bottom: 0;">
             <img src="{{ asset('img/logo.png') }}" class="img-fluid pr-3" alt="Step Depot">StepDepot.Net
          </div>
