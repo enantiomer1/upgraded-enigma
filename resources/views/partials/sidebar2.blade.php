@@ -15,11 +15,11 @@
         <div class="card-body pt-3">
             <p class="card-text mb-3">I found Sandy Beach's speaker tapes early in the program and really related to his message and delivery.
             For many years in the Washington DC area he chaired a series of meetings called Saturday Morning Live where each week he spoke on one of the 12 steps.  The way he does it is straghtforward and easy to digest.  For those that are new, take some time to listen and see if you like it too.</br></br>
-            I also had the chance to see him in person at the Tampa Big Book Retreat in 2012.  It was a great experience and I'm glad I took the time to go for the weekend.</br></br>
+            I also had the chance to see him in person at the Tampa Big Book Retreat in 2013.  It was a great experience and I'm glad I took the time to go for the weekend.</br></br>
             Sandy passed away in September of 2014 just 10 weeks shy of his 50th year of continous sobriety.</br></br>
             Click the button below to go to a collection of his tapes.
             </p>
-            <a href="#" class="btn btn-sm btn-outline-warning ml-2 shadow">Sandy Beach</a>
+            <a href="{{ route('speakers.sandy') }}" class="btn btn-sm btn-outline-warning ml-2 shadow">Sandy Beach</a>
         </div>
     </div>
 </div>

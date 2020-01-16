@@ -27,7 +27,7 @@
                     lives in a way which is indeed miraculous. He has commenced to accomplish those things for us which
                     we could never do by ourselves.</br></br>
                     Alcoholics Anonymous p.25</br>
-                    Copyright © 2019 by Alcoholics Anonymous World Services, Inc.
+                    Copyright © 2020 by Alcoholics Anonymous World Services, Inc.
                 </p>
             </div>
         </div>

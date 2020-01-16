@@ -37,6 +37,20 @@ class PageController extends Controller
         return view('pages.content_single', compact('title', 'header', 'post'));
     }
 
+    public function bigbook()
+    {
+        $title = 'AA Big Book';
+        $header = 'AA Big Book';
+        return view('pages.bigbook', compact('title', 'header'));
+    }
+
+    public function bbtext()
+    {
+        $title = 'AA Big Book Text Version';
+        $header = 'AA Big Book Text Version';
+        return view('pages.bb_text', compact('title', 'header'));
+    }
+
     public function preamble()
     {
         $title = 'Preamble';

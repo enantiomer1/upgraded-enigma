@@ -13,6 +13,9 @@
 
 Route::get('/', 'PageController@home')->name('home');
 
+Route::get('/bigbook', 'PageController@bigbook')->name('bigbook');
+Route::get('/bigbook/text', 'PageController@bbtext')->name('bbtext');
+
 Route::get('/preamble', 'PageController@preamble')->name('preamble');
 Route::get('/12steps', 'PageController@steps')->name('12steps');
 Route::get('/12traditions', 'PageController@traditions')->name('12traditions');
