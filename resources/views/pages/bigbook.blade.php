@@ -8,7 +8,7 @@
                     <div class="card-header bg-light border-bottom h5">Big Book - Text Version</div>
                     <div class="card-body">
                         <p class="card-text">A simple text version good for searching</p>
-                        <a href="{{ route('bbtext') }}" class="btn btn-sm btn-outline-warning">Text Version</a>
+                        <a href="{{ asset('dnld/big_book.txt') }}" target="_blank" class="btn btn-sm btn-outline-warning">Text Version</a>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                     <div class="card-header bg-light border-bottom h5">Big Book - PDF Version</div>
                     <div class="card-body">
                         <p class="card-text">A complete pdf file - all chapters</p>
-                        <a href="{{ asset('dnld/big_book.pdf') }}" class="btn btn-sm btn-outline-warning">PDF Version</a>
+                        <a href="{{ asset('dnld/big_book.pdf') }}" target="_blank" class="btn btn-sm btn-outline-warning">PDF Version</a>
                     </div>
                 </div>
             </div>

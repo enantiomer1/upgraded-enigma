@@ -7,6 +7,7 @@
             <a href="{{ route('speakers') }}" class="btn btn-sm btn-outline-secondary">Speakers</a>
             <a class="btn btn-sm btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="{{ route('bigbook') }}">AA Big Book</a>
                 <a class="dropdown-item" href="{{ route('preamble') }}">AA Preamble</a>
                 <a class="dropdown-item" href="{{ route('12steps') }}">The 12 Steps</a>
                 <a class="dropdown-item" href="{{ route('12traditions') }}">The 12 Traditions</a>

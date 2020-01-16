@@ -11,6 +11,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AA Stuff</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('bigbook') }}">AA Big Book</a>
                     <a class="dropdown-item" href="{{ route('preamble') }}">AA Preamble</a>
                     <a class="dropdown-item" href="{{ route('12steps') }}">The 12 Steps</a>
                     <a class="dropdown-item" href="{{ route('12traditions') }}">The 12 Traditions</a>

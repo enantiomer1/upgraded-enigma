@@ -1,24 +1,19 @@
-@extends('layouts.app')
-@section('content')
-<div class="row m-0">
-    <div class="col-md-12 col-lg-8">
-        <div class="card mb-3 shadow">
-            <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>AA Big Book Text Version</h5>
-                <p class="card-text py-2">
-    The text of the 1st 164 pages of Alcoholics Anonymous.</br>
-    Copyright © 2020 by Alcoholics Anonymous World Services, Inc.</br></br>
-    Chapter 1</br>
-    BILL'S STORY</br></br>
+The text of the 1st 164 pages of Alcoholics Anonymous.
+
+Copyright © 2020 by Alcoholics Anonymous World Services, Inc.
+
+Chapter 1
+
+    BILL'S STORY
+
     WAR FEVER ran high in the New England town to which we new, young officers from Plattsburg were assigned, and we were flattered when the first citizens took us to their homes, making us feel heroic.  Here was love, applause, war; moments sublime with intervals hilarious.  I was part of life at last, and in the midst of the excitement I discovered liquor.  I forgot the strong warnings and the prejudices of my people concerning drink.  In time we sailed for "Over There."  I was very lonely and again turned to alcohol.
     We landed in England.  I visited Winchester Cathedral.  Much moved, I wandered outside.  My attention was caught by a doggerel on an old tombstone:
-                    <blockquote>"Here lies a Hampshire Grenadier
+                    "Here lies a Hampshire Grenadier
                       Who caught his death
                       Drinking cold small beer.
                       A good soldier is ne'er forgot
                       Whether he dieth by musket
-                    Or by pot."</blockquote>
-
+                                   Or by pot."
     Ominous warning-which I failed to heed.
     Twenty-two, and a veteran of foreign wars, I went home at last.  I fancied myself a leader, for had not the men of my battery given me a special token of appreciation?  My talent for leadership, I imagined, would place me at the head of vast enterprises which I would manage with the utmost assurance.
     I took a night law course, and obtained employment as investigator for a surety company.  The drive for success was on.  I'd prove to the world I was important.  My work took me about Wall Street and little by little I became interested in the market.  Many people lost money-but some became very rich.  Why not I?  I studied economics and business as well as law.  Potential  alcoholic that I was, I nearly failed my law course.  At one of the finals I was too drunk to think or write.  Though my drinking was not yet continuous, it disturbed my wife.  We had long talks when I would still her forebodings by telling her that men of genius conceived their best projects when drunk; that the most majestic constructions of philosophic thought were so derived.
@@ -85,11 +80,11 @@
     We commenced to make many fast friends and a fellowship has grown up among us of which it is a wonderful thing to feel a part.  The joy of living we really have, even under pressure and difficulty.  I have seen hundreds of families set their feet in the path that really goes somewhere; have seen the most impossible domestic situations righted; feuds and bitterness of all sorts wiped out.  I have seen men come out of asylums and resume a vital place in the lives of their families and communities.  Business and professional men have regained their standing.  There is scarcely any form of trouble and misery which has not been overcome among us.  In one western city and its environs there are one thousand of us and our families.  We meet frequently so that newcomers may find the fellowship they seek.  At these informal gatherings one may often see from 50 to 200 persons.  We are growing in numbers and power.
     An alcoholic in his cups is an unlovely creature.  Our struggles with them are variously strenuous, comic, and tragic.  One poor chap committed suicide in my home.  He could not, or would not, see our way of life.
     There is, however a vast amount of fun about it all.  I suppose some would be shocked at our seeming worldliness and levity.  But just underneath there is deadly earnestness.  Faith has to work twenty-four hours a day in and through us, or we perish.
-    Most of us feel we need look no further for Utopia.  We have it with us right here and now.  Each day my friend's simple talk in our kitchen multiplies itself in a widening circle of peace on earth and good will to men.</br></br>
+    Most of us feel we need look no further for Utopia.  We have it with us right here and now.  Each day my friend's simple talk in our kitchen multiplies itself in a widening circle of peace on earth and good will to men.
 
-    Chapter 2</br>
+    Chapter 2
 
-    THERE IS A SOLUTION</br></br>
+    THERE IS A SOLUTION
 
     WE, OF ALCOHOLICS ANONYMOUS, know thousands of men and women who were once just as hopeless as Bill.  Nearly all have recovered.  They have solved the drink problem.
     We are average Americans.  All sections of this country and many of its occupations are represented, as well as many political, economic, social, and religious backgrounds.  We are people who normally would not mix.  But there exists among us a fellowship, a friendliness, and an understanding which is indescribably wonderful.  We are like the passengers of a great liner the moment after rescue from shipwreck when camaraderie, joyousness and democracy pervade the vessel from steerage to Captain's table.  Unlike the feelings of the ship's passengers, however, our joy in escape from disaster does not subside as we go our individual ways.  The feeling of having shared in a common peril is one element in the powerful cement which binds us.  But that in itself would never have held us together as we are now joined.
@@ -102,7 +97,7 @@
     None of us makes a sole vocation of this work, nor do we think its effectiveness would be increased if we did.  We feel that elimination of our drinking is but a beginning.  A much more important demonstration of our principles lies before us in our respective homes, occupations and affairs.  All of us spend much of our spare time in the sort of effort which we are going to describe.  A few are fortunate enough to be so situated that they can give nearly all their time to the work.
     If we keep on the way we are going there is little doubt that much good will result, but the surface of the problem would hardly be scratched.  Those of us who live in large cities are overcome by the reflection that close by hundreds are dropping into oblivion every day.  Many could recover if they had the opportunity we have enjoyed.  How then shall we present that which has been so freely given us?
     We have concluded to publish an anonymous volume setting forth the problem as we see it.  We shall bring to the task our combined experience and knowledge.  This should suggest a useful program for anyone concerned with a drinking problem.
-    Of necessity there will have to be discussion of matters medical, psychiatric, social, and religious.  We are aware that these matters are, from their very nature, controversial.  Nothing would please us so much as to write a book which would contain no basis for contention or argument.  We shall do our utmost to achieve that ideal.  Most of us sense that real tolerance of other people's shortcomings and viewpoints and a respect for their opinions are attitudes which make us more useful to others.  Our very lives, as ex-problem drinkers, depend upon our constant thought of others and how we may help meet their needs.
+    Of necessity there will have to be discussion of matters medical, psychiatric, social, and religious.  We are aware that these matters are, from their very nature, controversial.  Nothing would please us so much as to write a book which would contain no basis for contention or argument.  We shall do our utmost to achieve that ideal.  Most of us sense that real tolerance of other people's shortcomings and viewpoints and a respect for their opinions are attitudes which make us	more useful to others.  Our very lives, as ex-problem drinkers, depend upon our constant thought of others and how we may help meet their needs.
     You may already have asked yourself why it is that all of us became so very ill from drinking.  Doubtless you are curious to discover how and why, in the face of expert opinion to the contrary, we have recovered from a hopeless condition of mind and body.  If you are an alcoholic who wants to get over it, you may already be asking-"What do I have to do?"
     It is the purpose of this book to answer such questions specifically.  We shall tell you what we have done.  Before going into a detailed discussion, it may be well to summarize some points as we see them.
     How many times people have said to us: "I can take it or leave it alone.  Why can't he?"  "Why don't you drink like a gentleman or quit?"  "That fellow can't handle his liquor."  "Why don't you try beer and wine?"  "Lay off the hard stuff."  "His will power must be weak."  "He could stop if he wanted to."  "She's such a sweet girl, I should think he'd stop for her sake."  "The doctor told him that if he ever drank again it would kill him, but there he is all lit up again."
@@ -142,11 +137,11 @@
     In the following chapter, there appears an explanation of alcoholism, as we understand it, then a chapter addressed to the agnostic.  Many who once were in this class are now among our members.  Surprisingly enough, we find such convictions no great obstacle to a spiritual experience.
     Further on, clear-cut directions are given showing how we recovered.  These are followed by forty-three personal experiences.
     Each individual, in the personal stories, describes in his own language and from his own point of view the way he established his relationship with God.  These give a fair cross section of our membership and a clear-cut idea of what has actually happened in their lives.
-    We hope no one will consider these self-revealing accounts in bad taste.  Our hope is that many alcoholic men and women, desperately in need, will see these pages, and we believe that it is only by fully disclosing ourselves and our problems that they will be persuaded to say, "Yes, I am one of them too; I must have this thing."</br></br>
+    We hope no one will consider these self-revealing accounts in bad taste.  Our hope is that many alcoholic men and women, desperately in need, will see these pages, and we believe that it is only by fully disclosing ourselves and our problems that they will be persuaded to say, "Yes, I am one of them too; I must have this thing."
 
-    Chapter 3</br>
+    Chapter 3
 
-    MORE ABOUT ALCOHOLISM</br></br>
+    MORE ABOUT ALCOHOLISM
 
     MOST OF us have been unwilling to admit we were real alcoholics.  No person likes to think he is bodily and mentally different from his fellows.  Therefore, it is not surprising that our drinking careers have been characterized by countless vain attempts to prove we could drink like other people.  The idea that somehow, someday he will control and enjoy his drinking is the great obsession of every abnormal drinker.  The persistence of this illusion is astonishing.  Many pursue it into the gates of insanity or death.
     We learned that we had to fully concede to our innermost selves that we were alcoholics.  This is the first step in recovery.  The delusion that we are like other people, or presently may be, has to be smashed.
@@ -188,11 +183,11 @@
     "Quite as important was the discovery that spiritual principles would solve all my problems.  I have since been brought into a way of living infinitely more satisfying and, I hope, more useful than the life I lived before.  My old manner of life was by no means a bad one, but I would not exchange its best moments for the worst I have now.  I would not go back to it even if I could."
     Fred's story speaks for itself.  We hope it strikes home to thousands like him.  He had felt only the first nip of the wringer.  Most alcoholics have to be pretty badly mangled before they really commence to solve their problems.
     Many doctors and psychiatrists agree with our conclusions.  One of these men, staff member of a world-renowned hospital, recently made this statement to some of us: "What you say about the general hopelessness of the average alcoholic's plight is, in my opinion, correct.  As to two of you men, whose stories I have heard, there is no doubt in my mind that you were 100% hopeless, apart from divine help.  Had you offered yourselves as patients at this hospital, I would not have taken you, if I had been able to avoid it.  People like you are too heartbreaking.  Though not a religious person, I have profound respect for the spiritual approach in such cases as yours.  For most cases, there is virtually no other solution."
-    Once more: The alcoholic at certain times has no effective mental defense against the first drink.  Except in a few rare cases, neither he nor any other human being can provide such a defense.  His defense must come from a Higher Power.</br></br>
+    Once more: The alcoholic at certain times has no effective mental defense against the first drink.  Except in a few rare cases, neither he nor any other human being can provide such a defense.  His defense must come from a Higher Power.
 
-    Chapter 4</br>
+    Chapter 4
 
-    WE AGNOSTICS</br></br>
+    WE AGNOSTICS
 
     IN THE PRECEDING chapters you have learned something of alcoholism.  We hope we have made clear the distinction between the alcoholic and the nonalcoholic.  If, when you honestly want to, you find you cannot quit entirely, or if when drinking, you have little control over the amount you take, you are probably alcoholic.  If that be the case, you may be suffering from an illness which only a spiritual experience will conquer.
     To one who feels he is an atheist or agnostic such an experience seems impossible, but to continue as he is means disaster, especially if he is an alcoholic of the hopeless variety.  To be doomed to an alcoholic death or to live on a spiritual basis are not always easy alternatives to face.
@@ -242,11 +237,11 @@
     Thus was our friend's cornerstone fixed in place.  No later vicissitude has shaken it.  His alcoholic problem was taken away.  That very night, years ago, it disappeared.  Save for a few brief moments of temptation the thought of drink has never returned; and at such times a great revulsion has risen up in him.  Seemingly he could not drink even if he would.  God had restored his sanity.
     What is this but a miracle of healing?  Yet its elements are simple.  Circumstances made him willing to believe.  He humbly offered himself to his Maker - then he knew.
     Even so has God restored us all to our right minds.  To this man, the revelation was sudden.  Some of us grow into it more slowly.  But He has come to all who have honestly sought Him.
-    When we drew near to Him He disclosed Himself to us!</br></br>
+    When we drew near to Him He disclosed Himself to us!
 
-    Chapter 5</br>
+    Chapter 5
 
-    HOW IT WORKS</br></br>
+    HOW IT WORKS
 
     RARELY HAVE we seen a person fail who has thoroughly followed our path.  Those who do not recover are people who cannot or will not completely give themselves to this simple program, usually men and women who are constitutionally incapable of being honest with themselves.  There are such unfortunates.  They are not at fault; they seem to have been born that way.  They are naturally incapable of grasping and developing a manner of living which demands rigorous honesty.  Their chances are less than average.  There are those, too, who suffer from grave emotional and mental disorders, but many of them do recover if they have the capacity to be honest.
     Our stories disclose in a general way what we used to be like, what happened, and what we are like now. If you have decided you want what we have and are willing to go to any length to get it-then you are ready to take certain steps.
@@ -286,32 +281,32 @@
     We did exactly the same thing with our lives.  We took stock honestly.  First, we searched out the flaws in our make-up which caused our failure.  Being convinced that self, manifested in various ways, was what had defeated us, we considered its common manifestations.
     Resentment is the "number one" offender.  It destroys more alcoholics than anything else.  From it stem all forms of spiritual disease, for we have been not only mentally and physically ill, we have been spiritually sick.  When the spiritual malady is overcome, we straighten out mentally and physically.  In dealing with resentments, we set them on paper.  We listed people, institutions or principles with whom we were angry.  We asked ourselves why we were angry.  In most cases it was found that our self-esteem, our pocketbooks, our ambitions, our personal relationships (including sex) were hurt or threatened.  So we were sore.  We were "burned up."
     On our grudge list we set opposite each name our  injuries.  Was it our self-esteem, our security, our ambitions, our personal, or sex relations, which had been  interfered with?
-    We were usually as definite as this example:</br></br>
+    We were usually as definite as this example:
 
     I'm resentful at:            The Cause                                    Affects my:
 
-    Mr. Brown   His attention to my     Sex relations.
-            wife.   Self-esteem (fear)
-        Told my wife of my  Sex relations.
-            mistress.   Self-esteem (fear)
-        Brown may get my    Security.
-            job at the office.  Self-esteem (fear)
-    Mrs. Jones  She's a nut - she   Personal relationship.
-            snubbed me. She     Self-esteem (fear)
-            committed her husband
-            for drinking.
-            He's my friend.
-            She's a gossip.
-    My employer     Unreasonable - Unjust   Self-esteem(fear)
-            - Overbearing -     Security.
-            Threatens to fire
-            me for drinking
-            and padding my expense
-            account.
-    My wife     Misunderstands and  Pride - Personal
-            nags. Likes Brown.  sex  relations -
-            Wants house put in  Security (fear)
-            her name.</br></br>
+    Mr. Brown 	His attention to my 	Sex relations.
+     		wife. 	Self-esteem (fear)
+     	Told my wife of my 	Sex relations.
+     		mistress. 	Self-esteem (fear)
+     	Brown may get my  	Security.
+     		job at the office. 	Self-esteem (fear)
+    Mrs. Jones 	She's a nut - she 	Personal relationship.
+     		snubbed me. She 	Self-esteem (fear)
+     		committed her husband
+     		for drinking.
+     		He's my friend.
+     		She's a gossip.
+    My employer 	Unreasonable - Unjust 	Self-esteem(fear)
+     		- Overbearing - 	Security.
+     		Threatens to fire
+     		me for drinking
+     		and padding my expense
+     		account.
+    My wife 	Misunderstands and 	Pride - Personal
+     		nags. Likes Brown. 	sex  relations -
+     		Wants house put in 	Security (fear)
+     		her name.
 
     We went back through our lives.  Nothing counted but thoroughness and honesty.  When we were finished we considered it carefully.  The first thing apparent was that this world and its people were often quite wrong.  To conclude that others were wrong was as far as most of us ever got.  The usual outcome was that people continued to wrong us and we stayed sore.  Sometimes it was remorse and then we were sore at ourselves.  But the more we fought and tried to have our own way, the worse matters got.  As in war, the victor only seemed to win.  Our moments of triumph were short-lived.
     It is plain that a life which includes deep resentment leads only to futility and unhappiness.  To the precise extent that we permit these, do we squander the hours that might have been worth while.  But with the alcoholic, whose hope is the maintenance and growth of a spiritual experience, this business of resentment is infinitely grave.  We found that it is fatal.  For when harboring such feelings we shut ourselves off from the sunlight of the Spirit.  The insanity of alcohol returns and we drink again.  And with us, to drink is to die.
@@ -332,11 +327,11 @@
     Suppose we fall short of the chosen ideal and stumble?  Does this mean we are going to get drunk?  Some people tell us so.  But this is only a half-truth.  It depends on us and on our motives.  If we are sorry for what we have done, and have the honest desire to let God take us to better things, we believe we will be forgiven and will have learned our lesson.  If we are not sorry, and our conduct continues to harm others, we are quite sure to drink.  We are not theorizing.  These are facts out of our experience.
     To sum up about sex:  We earnestly pray for the right ideal, for guidance in each questionable situation, for sanity, and for the strength to do the right thing.  If sex is very troublesome, we throw ourselves the harder into helping others.  We think of their needs and work for them.  This takes us out of ourselves.  It quiets the imperious urge, when to yield would mean heartache.
     If we have been thorough about our personal inventory, we have written down a lot.  We have listed and analyzed our resentments.  We have begun to comprehend their futility and their fatality.  We have commenced to see their terrible destructiveness.  We have begun to learn tolerance, patience and good will toward all men, even our enemies, for we look on them as sick people.  We have listed the people we have hurt by our conduct, and are willing to straighten out the past if we can.
-    In this book you read again and again that faith did for us what we could not do for ourselves.  We hope you are convinced now that God can remove whatever self-will has blocked you off from Him.  If you have already made a decision, and an inventory of your grosser handicaps, you have made a good beginning.  That being so you have swallowed and digested some big chunks of truth about yourself.</br></br>
+    In this book you read again and again that faith did for us what we could not do for ourselves.  We hope you are convinced now that God can remove whatever self-will has blocked you off from Him.  If you have already made a decision, and an inventory of your grosser handicaps, you have made a good beginning.  That being so you have swallowed and digested some big chunks of truth about yourself.
 
-    Chapter 6</br>
+    Chapter 6
 
-    INTO ACTION</br></br>
+    INTO ACTION
 
     HAVING MADE our personal inventory, what shall we do about it?  We have been trying to get a new attitude, a new relationship with our Creator, and to discover the obstacles in our path.  We have admitted certain defects; we have ascertained in a rough way what the trouble is; we have put our finger on the weak items in our personal inventory.  Now these are about to be cast out.  This requires action on our part, which, when completed, will mean that we have admitted to God, to ourselves, and to another human being, the exact nature of our defects.  This brings us to the Fifth Step in the program of recovery mentioned in the preceding chapter.
     This is perhaps difficult-especially discussing our defects with another person.  We think we have done well enough in admitting these things to ourselves.  There is doubt about that.  In actual practice, we usually find a solitary self-appraisal insufficient.  Many of us thought it necessary to go much further.  We will be more reconciled to discussing ourselves with another person when we see good reasons why we should do so.  The best reason first: If we skip this vital step, we may not overcome drinking.  Time after time newcomers have tried to keep to themselves certain facts about their lives.  Trying to avoid this humbling experience, they have turned to easier methods.  Almost invariably they got drunk.  Having persevered with the rest of the program, they wondered why they fell.  We think the reason is that they never completed their housecleaning.  They took inventory all right, but hung on to some of the worst items in stock.  They only thought they had lost their egoism and fear; they only thought they had humbled themselves.  But they had not learned enough of humility, fearlessness and honesty, in the sense we find it necessary, until they told someone else all their life story.
@@ -389,11 +384,11 @@
     As we go through the day we pause, when agitated or doubtful, and ask for the right thought or action.  We constantly remind ourselves we are no longer running the show, humbly saying to ourselves many times each day "Thy will be done."  We are then in much less danger of excitement, fear, anger, worry, self-pity, or foolish decisions.  We become much more efficient.  We do not tire so easily, for we are not burning up energy foolishly as we did when we were trying to arrange life to suit ourselves.
     It works-it really does.
     We alcoholics are undisciplined.  So we let God discipline us in the simple way we have just outlined.
-    But this is not all.  There is action and more action.  "Faith without works is dead."  The next chapter is entirely devoted to Step Twelve.</br></br>
+    But this is not all.  There is action and more action.  "Faith without works is dead."  The next chapter is entirely devoted to Step Twelve.
 
-    Chapter 7</br>
+    Chapter 7
 
-    WORKING WITH OTHERS</br></br>
+    WORKING WITH OTHERS
 
     PRACTICAL EXPERIENCE shows that nothing will so much insure immunity from drinking as intensive work with other alcoholics.  It works when other activities fail.  This is our twelfth suggestion: Carry this message to other alcoholics!  You can help when no one else can.  You can secure their confidence when others fail.  Remember they are very ill.
     Life will take on new meaning.  To watch people recover, to see them help others, to watch loneliness vanish, to see a fellowship grow up about you, to have a host of friends-this is an experience you must not miss.  We know you will not want to miss it.  Frequent contact with newcomers and with each other is the bright spot of our lives.
@@ -683,11 +678,3 @@
     Our book is meant to be suggestive only.  We realize we know only a little.  God will constantly disclose more to you and to us.  Ask Him in your morning meditation what you can do each day for the man who is still sick.  The answers will come, if your own house is in order.  But obviously you cannot transmit something you haven't got.  See to it that your relationship with Him is right, and great events will come to pass for you and countless others.  This is the Great Fact for us.
     Abandon yourself to God as you understand God.  Admit your faults to Him and to your fellows.  Clear away the wreckage of your past.  Give freely of what you find and join us.  We shall be with you in the Fellowship of the Spirit, and you will surely meet some of us as you trudge the Road of Happy Destiny.
     May God bless you and keep you-until then.
-
-                </p>
-            </div>
-        </div>
-    </div>
-    @include('partials.sidebar2')
-</div>
-@endsection
