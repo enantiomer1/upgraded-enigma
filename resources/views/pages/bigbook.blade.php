@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-6">
                 <div class="card mb-4 shadow">
-                    <div class="card-header bg-light border-bottom h5">Link to Audio Version at aa.org</div>
+                    <div class="card-header bg-light border-bottom h5">Link to audio version at aa.org</div>
                     <div class="card-body">
                         <p class="card-text">Navigate to each chapter or story</p>
                         <a href="https://aa.org/pages/en_US/alcoholics-anonymous-audio-version" target="_blank" class="btn btn-sm btn-outline-warning">Audio Version</a>

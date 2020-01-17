@@ -4,7 +4,7 @@
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>The 12 Steps</h5>
+                <h5 class="pb-2 border-bottom">The 12 Steps</h5>
                 <p class="card-text py-2" style="line-height: 2.0;">
                 <strong>Here are the steps we took, which are suggested as a program of recovery:</strong></br>
                 1. We admitted we were powerless over alcohol - that our lives had become unmanageable.</br>

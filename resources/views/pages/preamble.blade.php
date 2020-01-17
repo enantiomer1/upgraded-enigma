@@ -4,7 +4,7 @@
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>AA Preamble</h5>
+                <h5 class="pb-2 border-bottom">AA Preamble</h5>
                 <p class="card-text py-2">
                     Alcoholics Anonymous is a fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others to recover from alcoholism.</br></br>
                     The only requirement for membership is a desire to stop drinking. There are no dues or fees for A.A. membership; we are self-supporting through our own contributions. A.A. is not allied with any sect, denomination, politics, organization or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes. Our primary purpose is to stay sober and help other alcoholics to achieve sobriety.
@@ -13,7 +13,7 @@
         </div>
         <div class="card mb-3 shadow">
             <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>Origins of the AA Preamble</h5>
+                <h5 class="pb-2 border-bottom">Origins of the AA Preamble</h5>
                 <p class="card-text py-2">
                     The Preamble first appeared in the Grapevine in June 1947, and was written by Tom Y., the Grapevine editor at that time. The aim was to offer a concise definition of A.A. Shortly thereafter, the Preamble began appearing in each monthly is- sue of the Grapevine, and later on in much of our A.A. Conference-approved literature.</br></br>
                     It came to be called the preamble because it is so often read at the opening of A.A. meetings.</br></br>

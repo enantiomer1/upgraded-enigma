@@ -4,7 +4,7 @@
     <div class="col-md-12 col-lg-8">
         <div class="card mb-4 shadow">
             <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>Get into the steps</h5>
+                <h5 class="pb-2 border-bottom">Get into the steps</h5>
                 <p class="card-text py-2">
                     Working the steps with another member of AA changed my life forever. Everyone's path to step one is different but accomplishes the same thing: the willingness to ask another member of the program to guide them through. Once you have really taken and digested step one, the remainding steps are much easier. It may not feel like it in the beginning, but if you're are ready, grab a sponsor and don't let go. He or she will guide you through it.</br></br>
                     I built this website to try and give back what was freely given to me. If we can help one person in thier AA journey, it's worth the effort.
@@ -13,7 +13,7 @@
         </div>
         <div class="card mb-3 shadow">
             <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>Favorite Big Book Passage</h5>
+                <h5 class="pb-2 border-bottom">Favorite Big Book Passage</h5>
                 <p class="card-text py-2">
                     There is a solution. Almost none of us liked the selfsearching, the leveling of our pride, the confession of
                     shortcomings which the process requires for its successful consummation. But we saw that it really
@@ -31,7 +31,7 @@
                 </p>
             </div>
         </div>
-        <h4 class="pt-3 pb-2 mb-3 border-bottom"><span class="title-line2"></span>From the Blog</h4>
+        <h4 class="pt-3 pb-2 mb-3 border-bottom">From the Blog</h4>
         @foreach ($posts as $post)
         <div class="card mt-2 p-2 mb-4 shadow">
             <div class="row no-gutters">

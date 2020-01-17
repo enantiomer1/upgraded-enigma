@@ -4,7 +4,7 @@
     <div class="col-md-12 col-lg-8">
         <div class="card mb-3 shadow">
             <div class="card-body">
-                <h5 class="pb-2 border-bottom"><span class="title-line2"></span>The 12 Traditions - Short Form</h5>
+                <h5 class="pb-2 border-bottom">The 12 Traditions - Short Form</h5>
                 <p class="card-text py-2" style="line-height: 2.0;">
 
                 1. Our common welfare should come first; personal recovery depends upon

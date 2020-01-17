@@ -14,6 +14,7 @@
 Route::get('/', 'PageController@home')->name('home');
 
 Route::get('/bigbook', 'PageController@bigbook')->name('bigbook');
+Route::get('/12and12', 'PageController@twelve_and_twelve')->name('12and12');
 
 Route::get('/preamble', 'PageController@preamble')->name('preamble');
 Route::get('/12steps', 'PageController@steps')->name('12steps');

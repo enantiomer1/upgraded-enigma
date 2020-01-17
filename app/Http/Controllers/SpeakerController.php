@@ -18,7 +18,7 @@ class SpeakerController extends Controller
     {
         $title = 'AA Speakers';
         $header = 'AA Speakers';
-        $speakers = Speaker::orderBy('created_at','desc')->paginate(25);
+        $speakers = Speaker::orderBy('created_at','asc')->paginate(25);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 
@@ -26,7 +26,7 @@ class SpeakerController extends Controller
     {
         $title = 'AA Speakers';
         $header = 'AA Speakers';
-        $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'desc')->paginate(10);
+        $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'asc')->paginate(10);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 }

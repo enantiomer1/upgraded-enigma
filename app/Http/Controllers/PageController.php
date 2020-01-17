@@ -44,6 +44,13 @@ class PageController extends Controller
         return view('pages.bigbook', compact('title', 'header'));
     }
 
+    public function twelve_and_twelve()
+    {
+        $title = '12 x 12';
+        $header = 'The Twelve Steps and Twelve Traditions';
+        return view('pages.12and12', compact('title', 'header'));
+    }
+
     public function preamble()
     {
         $title = 'Preamble';

@@ -16,6 +16,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('12and12') }}">
+                    <span class="dot bg-primary"></span>
+                    AA 12 x 12
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('preamble') }}">
                     <span class="dot bg-warning"></span>
                     AA Preamble
