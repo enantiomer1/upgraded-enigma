@@ -124,7 +124,7 @@ class PageController extends Controller
     {
         $title = 'AA Prayers';
         $header = 'AA Prayers';
-        $posts = Post::where('section', 'prayers')->where('status', 'published')->orderBy('published_date','desc')->paginate(6);
+        $posts = Post::where('section', 'prayers')->where('status', 'published')->orderBy('published_date','asc')->paginate(6);
         return view('pages.prayers', compact('title', 'header', 'posts'));
     }
 

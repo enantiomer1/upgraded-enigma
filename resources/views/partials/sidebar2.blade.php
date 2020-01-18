@@ -1,13 +1,12 @@
 <div class="col-lg-4 d-none d-lg-block">
     <div class="card shadow mb-4">
-        <div class="card-header bg-light border-bottom h5">Find A Sponsor Near You</div>
+        <div class="card-header bg-light border-bottom h5">Find AA Near You</div>
         <div class="card-body pt-3">
-            <p class="card-text mb-2">If you are new to the program and do not have a sponsor yet, we highly recommend it.</p>
-            <p class="card-text mb-2">The best place to find a sponsor is your local meetings.  Find a meeting close to you that you like, listen to the members as they share, then choose one.</p>
-            <p class="card-text mb-2">Just remember:  there is no wrong choice, get a sponsor and get into the steps.</p>
-            <p class="card-text mb-2">This task can seem difficult, it is NOT.  AA members are there to help and are always looking for newcomers to work with.</p>
-            <p class="card-text mb-3">We are working on a sponsor finder App that you can search for AA members close to you that are also signed up and looking for sponsees.</p>
-            <a href="#" class="btn btn-sm btn-outline-warning ml-2 shadow">Sponsor Search Coming Soon</a>
+            <p class="card-text mb-3">The best way to find meetings near you is to do a local internet search for <em>YOUR CITY NAME AA</em>,  this will quickly get you to your local central office website with great resources. Also try <em>AA Meetings Near Me or AA Intergroup Near Me.</em></br></br>
+            Another good method is using your phone to find a local meeting App.  Do a search for <em>AA meeting finder</em> and try out the top 2 or 3 choices.</br></br>
+            The aa.org website has a good resource for finding local meetings.  Click the link below to use the aa.org meeting finder.</br>
+            </p>
+            <a href="https://www.aa.org/pages/en_US/find-aa-resources" target="_blank" class="btn btn-sm btn-outline-warning ml-2 shadow">Find local AA Meetings</a>
         </div>
     </div>
     <div class="card shadow mb-3">
@@ -17,7 +16,7 @@
             For many years in the Washington DC area he chaired a series of meetings called Saturday Morning Live where each week he spoke on one of the 12 steps.  The way he does it is straghtforward and easy to digest.  For those that are new, take some time to listen and see if you like it too.</br></br>
             I also had the chance to see him in person at the Tampa Big Book Retreat in 2013.  It was a great experience and I'm glad I took the time to go for the weekend.</br></br>
             Sandy passed away in September of 2014 just 10 weeks shy of his 50th year of continous sobriety.</br></br>
-            Click the button below to go to a collection of his tapes.
+            Click the button below to go to a collection of his tapes.</br>
             </p>
             <a href="{{ route('speakers.sandy') }}" class="btn btn-sm btn-outline-warning ml-2 shadow">Sandy Beach</a>
         </div>

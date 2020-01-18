@@ -24,8 +24,8 @@ class SpeakerController extends Controller
 
     public function sandyb()
     {
-        $title = 'AA Speakers';
-        $header = 'AA Speakers';
+        $title = 'Sandy B';
+        $header = 'Sandy Beach';
         $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'asc')->paginate(10);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
