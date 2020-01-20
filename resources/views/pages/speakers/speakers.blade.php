@@ -2,6 +2,25 @@
 @section('content')
 <div class="row m-0">
     <div class="col-md-12 col-lg-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card p-2 mb-4" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="{{ asset('img/under_construction.jpg') }}" class="card-img" alt="under construction">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title">Speaker tapes being uploaded</h5>
+                                    <p class="card-text">There are limited speaker tapes on the site now, but we will be uploading more soon. Appologies for the construction mess.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card mb-4 shadow">

@@ -3,7 +3,7 @@
         <div class="card-header bg-light border-bottom h5">Find AA Near You</div>
         <div class="card-body pt-3">
             <p class="card-text mb-3">The best way to find meetings near you is to do a local internet search for <em>YOUR CITY NAME AA</em>,  this will quickly get you to your local central office website with great resources. Also try <em>AA Meetings Near Me or AA Intergroup Near Me.</em></br></br>
-            Another good method is using your phone to find a local meeting App.  Do a search for <em>AA meeting finder</em> and try out the top 2 or 3 choices.</br></br>
+            Another good method is using your phone to find a meeting finder App.  Do a search for <em>AA meeting finder</em> and try out the top 2 or 3 choices.</br></br>
             The aa.org website has a good resource for finding local meetings.  Click the link below to use the aa.org meeting finder.</br>
             </p>
             <a href="https://www.aa.org/pages/en_US/find-aa-resources" target="_blank" class="btn btn-sm btn-outline-warning ml-2 shadow">Find local AA Meetings</a>
