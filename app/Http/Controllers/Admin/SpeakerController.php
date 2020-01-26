@@ -26,7 +26,7 @@ class SpeakerController extends Controller
     {
         $title = 'Speaker Tape Management';
         $header = 'Speaker Tape Management';
-        $speakers = Speaker::orderBy('created_at','desc')->paginate(10);
+        $speakers = Speaker::orderBy('created_at','desc')->paginate(25);
         return view('admin.speakers.index', compact('title', 'header', 'speakers'));
     }
 
@@ -53,7 +53,8 @@ class SpeakerController extends Controller
         request()->validate([
             'speaker_name' => ['required', 'min:3', 'max:155'],
             'description' => ['required', 'min:3', 'max:191'],
-            'file' => ['required', 'file', 'max:9999'],
+            'tag' => 'required',
+            'file' => ['required', 'file', 'max:15999'],
         ]);
 
         // Handle File Upload
@@ -72,10 +73,11 @@ class SpeakerController extends Controller
             $fileNameToStore = 'nofile.mp3';
         }
 
-        // Create Post
+        // Create Content
         $speaker = new Speaker;
         $speaker->speaker_name = $request->speaker_name;
         $speaker->description = $request->description;
+        $speaker->tag = $request->tag;
         $speaker->file = $fileNameToStore;
         $speaker->save();
 
@@ -85,7 +87,7 @@ class SpeakerController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Post  $post
+     * @param  \App\Speaker  $speaker
      * @return \Illuminate\Http\Response
      */
     public function show(Speaker $speaker)
@@ -96,7 +98,7 @@ class SpeakerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Post  $post
+     * @param  \App\Speaker  $speaker
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -111,7 +113,7 @@ class SpeakerController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Post  $post
+     * @param  \App\Speaker  $speaker
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -119,6 +121,7 @@ class SpeakerController extends Controller
         request()->validate([
             'speaker_name' => ['required', 'min:3', 'max:155'],
             'description' => ['required', 'min:3', 'max:191'],
+            'tag' => 'required',
         ]);
 
         $speaker = Speaker::where('id',$id)->first();
@@ -140,6 +143,7 @@ class SpeakerController extends Controller
 
         $speaker->speaker_name = $request->speaker_name;
         $speaker->description = $request->description;
+        $speaker->tag = $request->tag;
         if($request->hasFile('file')){
             $speaker->file = $fileNameToStore;
         }
@@ -152,14 +156,14 @@ class SpeakerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Post  $post
+     * @param  \App\Speaker  $speaker
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         $speaker = Speaker::where('id',$id)->first();
 
-        //Check if post exists before deleting
+        //Check if speaker exists before deleting
         if (!isset($speaker)){
             return redirect()->route('admin.speakers.index')->with('warning', 'No Speaker Tape Found');
         }

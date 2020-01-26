@@ -36,7 +36,7 @@
                     <div class="card-header bg-light border-bottom h5">Top 50 Speaker Tapes</div>
                     <div class="card-body">
                         <p class="card-text">Top 50 of all time</p>
-                        <a href="{{ route('speakers.all') }}" class="btn btn-sm btn-outline-warning">Top 50 Tapes</a>
+                        <a href="{{ route('speakers.top50') }}" class="btn btn-sm btn-outline-warning">Top 50 Tapes</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <div class="card-header bg-light border-bottom h5">Joe and Charlie Big Book Study</div>
                     <div class="card-body">
                         <p class="card-text">Joe and Charlie's Big Book audio tapes</p>
-                        <a href="{{ route('speakers.all') }}" class="btn btn-sm btn-outline-warning">Joe and Charlie</a>
+                        <a href="{{ route('speakers.joe_charlie') }}" class="btn btn-sm btn-outline-warning">Joe and Charlie</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <div class="card-header bg-light border-bottom h5">Clarence Snyder</div>
                     <div class="card-body">
                         <p class="card-text">One of the original members of the Oxford Group!</p>
-                        <a href="{{ route('speakers.all') }}" class="btn btn-sm btn-outline-warning">Clarence Snyder</a>
+                        <a href="{{ route('speakers.clarence') }}" class="btn btn-sm btn-outline-warning">Clarence Snyder</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <div class="card-header bg-light border-bottom h5">Funny Speaker Tapes</div>
                     <div class="card-body">
                         <p class="card-text">Speaker tapes on the lighter side</p>
-                        <a href="{{ route('speakers.all') }}" class="btn btn-sm btn-outline-warning">Funny Tapes</a>
+                        <a href="{{ route('speakers.funny') }}" class="btn btn-sm btn-outline-warning">Funny Tapes</a>
                     </div>
                 </div>
             </div>

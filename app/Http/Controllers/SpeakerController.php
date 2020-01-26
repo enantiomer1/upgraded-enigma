@@ -29,4 +29,36 @@ class SpeakerController extends Controller
         $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'asc')->paginate(10);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
+
+    public function clarence()
+    {
+        $title = 'Clarence Snyder';
+        $header = 'Clarence Snyder';
+        $speakers = Speaker::where('tag', 'Clarence Snyder')->orderBy('created_at', 'asc')->paginate(10);
+        return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
+    }
+
+    public function joe_charlie()
+    {
+        $title = 'Joe and Charlie';
+        $header = 'Joe and Charlie Big Book Study';
+        $speakers = Speaker::where('tag', 'Joe and Charlie')->orderBy('created_at', 'asc')->paginate(10);
+        return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
+    }
+
+    public function funny()
+    {
+        $title = 'Funny';
+        $header = 'Funny Speaker Tapes';
+        $speakers = Speaker::where('tag', 'funny')->orderBy('created_at', 'asc')->paginate(10);
+        return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
+    }
+
+    public function top50()
+    {
+        $title = 'Top 50';
+        $header = 'Top 50 Speaker Tapes';
+        $speakers = Speaker::where('tag', 'top50')->orderBy('created_at', 'asc')->paginate(10);
+        return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
+    }
 }

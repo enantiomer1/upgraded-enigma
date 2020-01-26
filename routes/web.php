@@ -38,6 +38,10 @@ Route::get('/prayers/{slug}', 'PageController@prayers_single')->name('prayers_si
 Route::get('/speakers', 'SpeakerController@speakers')->name('speakers');
 Route::get('/speakers/index', 'SpeakerController@index')->name('speakers.all');
 Route::get('/speakers/sandyb', 'SpeakerController@sandyb')->name('speakers.sandy');
+Route::get('/speakers/clarence_snyder', 'SpeakerController@clarence')->name('speakers.clarence');
+Route::get('/speakers/joe_and_charlie', 'SpeakerController@joe_charlie')->name('speakers.joe_charlie');
+Route::get('/speakers/funny', 'SpeakerController@funny')->name('speakers.funny');
+Route::get('/speakers/top50', 'SpeakerController@top50')->name('speakers.top50');
 
 Route::get('contact', 'ContactController@show')->name('contact');
 Route::post('contact/send', 'ContactController@send')->name('contact.send');

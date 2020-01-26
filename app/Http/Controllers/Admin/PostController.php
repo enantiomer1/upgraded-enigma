@@ -53,14 +53,7 @@ class PostController extends Controller
     {
         request()->validate([
             'title' => ['required', 'min:3', 'max:191'],
-            'description' => 'required',
-            'content' => ['required', 'min:3'],
-            'section' => 'required',
-            'image' => ['required', 'image', 'max:4999'],
-            'alt_text' => ['required', 'min:3', 'max:75'],
-            'meta_description' => ['required', 'min:3', 'max:155'],
             'status' => 'required',
-            'published_date' => 'required',
         ]);
 
         // Handle File Upload
@@ -132,7 +125,7 @@ class PostController extends Controller
     {
 
         request()->validate([
-            'title' => ['required', 'min:3', 'max:255'],
+            'title' => ['required', 'min:3', 'max:191'],
             'description' => 'required',
             'content' => ['required', 'min:3'],
             'status' => 'required',

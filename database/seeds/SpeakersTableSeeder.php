@@ -14,6 +14,6 @@ class SpeakersTableSeeder extends Seeder
     {
         //truncate the table
         Speaker::truncate();
-        factory(App\Speaker::class, 30)->create();
+        factory(App\Speaker::class, 75)->create();
     }
 }

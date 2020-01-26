@@ -12,7 +12,7 @@ class Speaker extends Model
      * @var array
      */
     protected $fillable = [
-        'speaker_name', 'description', 'file',
+        'speaker_name', 'description', 'tag', 'file',
     ];
 
 }

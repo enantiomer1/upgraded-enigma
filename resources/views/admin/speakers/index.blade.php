@@ -20,6 +20,7 @@
                             <tr>
                                 <th scope="col">Speaker Name</th>
                                 <th scope="col">Description</th>
+                                <th scope="col">Tag</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -28,6 +29,7 @@
                             <tr>
                                 <td>{{ $speaker->speaker_name }}</td>
                                 <td>{{ $speaker->description }}</td>
+                                <td>{{ $speaker->tag }}</td>
                                 <td>
                                     <a href="{{ route('admin.speakers.edit', $speaker->id) }}" class="float-left pl-2 pr-2"><button type="button" class="btn btn-sm btn-info">Edit</button></a>
                                     <form action="{{ route('admin.speakers.destroy', $speaker->id) }}" method="POST" class="float-left">

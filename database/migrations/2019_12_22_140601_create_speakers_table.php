@@ -17,6 +17,7 @@ class CreateSpeakersTable extends Migration
             $table->bigIncrements('id');
             $table->string('speaker_name')->default('');
             $table->string('description')->default('');
+            $table->string('tag')->default('');
             $table->string('file')->nullable();
             $table->timestamps();
         });
