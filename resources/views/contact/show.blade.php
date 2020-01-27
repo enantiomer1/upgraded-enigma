@@ -43,6 +43,7 @@
                             </div>
                         </div>
                         @csrf
+                        <div class="g-recaptcha col-md-8 offset-md-2 pb-3" data-sitekey="6LeE_NIUAAAAAB0retzwzy6EqvdbLE05Au8fs4RD"></div>
                         @method('POST')
                         <div class="col-md-8 offset-md-2">
                             <button type="submit" class="btn btn-primary">Send Mail</button>

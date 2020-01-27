@@ -26,7 +26,7 @@ class SpeakerController extends Controller
     {
         $title = 'Sandy B';
         $header = 'Sandy Beach';
-        $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'asc')->paginate(10);
+        $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'asc')->paginate(20);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 
@@ -34,7 +34,7 @@ class SpeakerController extends Controller
     {
         $title = 'Clarence Snyder';
         $header = 'Clarence Snyder';
-        $speakers = Speaker::where('tag', 'Clarence Snyder')->orderBy('created_at', 'asc')->paginate(10);
+        $speakers = Speaker::where('speaker_name', 'Clarence Snyder')->orderBy('created_at', 'asc')->paginate(20);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 
@@ -42,7 +42,7 @@ class SpeakerController extends Controller
     {
         $title = 'Joe and Charlie';
         $header = 'Joe and Charlie Big Book Study';
-        $speakers = Speaker::where('tag', 'Joe and Charlie')->orderBy('created_at', 'asc')->paginate(10);
+        $speakers = Speaker::where('tag', 'Joe and Charlie')->orderBy('created_at', 'asc')->paginate(20);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 
@@ -50,7 +50,7 @@ class SpeakerController extends Controller
     {
         $title = 'Funny';
         $header = 'Funny Speaker Tapes';
-        $speakers = Speaker::where('tag', 'funny')->orderBy('created_at', 'asc')->paginate(10);
+        $speakers = Speaker::where('tag', 'funny')->orderBy('created_at', 'asc')->paginate(20);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 
@@ -58,7 +58,7 @@ class SpeakerController extends Controller
     {
         $title = 'Top 50';
         $header = 'Top 50 Speaker Tapes';
-        $speakers = Speaker::where('tag', 'top50')->orderBy('created_at', 'asc')->paginate(10);
+        $speakers = Speaker::where('tag', 'top50')->orderBy('created_at', 'asc')->paginate(25);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 }
