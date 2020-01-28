@@ -45,6 +45,7 @@
                             <div class="col-md-8">
                                 <select id="tag" class="form-control @error('tag') is-invalid @enderror" name="tag" value="{{ old('tag') }}" required autocomplete="tag" autofocus>
                                     <option>Sandy Beach</option>
+                                    <option>Sandy Best</option>
                                     <option>Clarence Snyder</option>
                                     <option>Joe and Charlie</option>
                                     <option>funny</option>

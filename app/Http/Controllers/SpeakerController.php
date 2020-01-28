@@ -22,11 +22,19 @@ class SpeakerController extends Controller
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 
-    public function sandyb()
+    public function sandy_sml()
     {
         $title = 'Sandy B';
-        $header = 'Sandy Beach';
-        $speakers = Speaker::where('speaker_name', 'Sandy Beach')->orderBy('created_at', 'asc')->paginate(20);
+        $header = 'Sandy Beach - Saturday Morning Live';
+        $speakers = Speaker::where('description', 'like', 'Saturday%')->orderBy('created_at', 'asc')->paginate(20);
+        return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
+    }
+
+    public function sandy_best()
+    {
+        $title = 'Sandy B';
+        $header = 'Sandy Beach - Best Of';
+        $speakers = Speaker::where('tag', 'Sandy Best')->orderBy('created_at', 'asc')->paginate(20);
         return view('pages.speakers.speakers_sort', compact('title', 'header', 'speakers'));
     }
 

@@ -18,7 +18,7 @@
             Sandy passed away in September of 2014 just 10 weeks shy of his 50th year of continous sobriety.</br></br>
             Click the button below to go to a collection of his tapes.</br>
             </p>
-            <a href="{{ route('speakers.sandy') }}" class="btn btn-sm btn-outline-warning ml-2 shadow">Sandy Beach</a>
+            <a href="{{ route('speakers.sandy_sml') }}" class="btn btn-sm btn-outline-warning ml-2 shadow">Sandy - SML</a>
         </div>
     </div>
 </div>

@@ -37,7 +37,8 @@ Route::get('/prayers/{slug}', 'PageController@prayers_single')->name('prayers_si
 
 Route::get('/speakers', 'SpeakerController@speakers')->name('speakers');
 Route::get('/speakers/index', 'SpeakerController@index')->name('speakers.all');
-Route::get('/speakers/sandyb', 'SpeakerController@sandyb')->name('speakers.sandy');
+Route::get('/speakers/sandy_sml', 'SpeakerController@sandy_sml')->name('speakers.sandy_sml');
+Route::get('/speakers/sandy_best', 'SpeakerController@sandy_best')->name('speakers.sandy_best');
 Route::get('/speakers/clarence_snyder', 'SpeakerController@clarence')->name('speakers.clarence');
 Route::get('/speakers/joe_and_charlie', 'SpeakerController@joe_charlie')->name('speakers.joe_charlie');
 Route::get('/speakers/funny', 'SpeakerController@funny')->name('speakers.funny');
