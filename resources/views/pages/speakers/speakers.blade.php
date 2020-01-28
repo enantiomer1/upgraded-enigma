@@ -42,20 +42,19 @@
             </div>
             <div class="col-md-6">
                 <div class="card mb-4 shadow">
-                    <div class="card-header bg-light border-bottom h5">Sandy Beach</div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <p class="card-text">Sat Morning Live</p>
-                                <a href="{{ route('speakers.sandy_sml') }}" class="btn btn-sm btn-outline-warning shadow">Sat M. Live</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body justify-content-center">
-                                <p class="card-text">Some of Sandy's Best</p>
-                                <a href="{{ route('speakers.sandy_best') }}" class="btn btn-sm btn-outline-warning shadow">Sandy's Best</a>
-                            </div>
-                        </div>
+                    <div class="card-header bg-light border-bottom h5">Sandy Beach - Sat. Morning Live</div>
+                    <div class="card-body">
+                        <p class="card-text">Saturday Morning Live, Steps 1-12, 1994</p>
+                        <a href="{{ route('speakers.sandy_sml') }}" class="btn btn-sm btn-outline-warning shadow">Sat. Morning Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 shadow">
+                    <div class="card-header bg-light border-bottom h5">Sandy Beach - Best Of</div>
+                    <div class="card-body">
+                        <p class="card-text">Some of Sandy's Best</p>
+                        <a href="{{ route('speakers.sandy_best') }}" class="btn btn-sm btn-outline-warning shadow">Sandy's Best</a>
                     </div>
                 </div>
             </div>
