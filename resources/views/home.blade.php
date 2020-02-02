@@ -6,8 +6,8 @@
             <div class="card-body">
                 <h5 class="pb-2 border-bottom">Get into the steps</h5>
                 <p class="card-text py-2">
-                    Working the steps with another member of AA changed my life forever. Everyone's path to step one is different but accomplishes the same thing: the willingness to ask another member of the program to guide them through. Once you have really taken and digested step one, the remainding steps are much easier. It may not feel like it in the beginning, but if you're are ready, grab a sponsor and don't let go. He or she will guide you through it.</br></br>
-                    I built this website to try and give back what was freely given to me. If we can help one person in thier AA journey, it's worth the effort.
+                    Working the steps with another member of AA changed my life forever. Everyone's path to step one is different but accomplishes the same thing: the willingness to ask another member of the program to guide them through. Once you have really taken and digested step one, the remaining steps are much easier. It may not feel like it in the beginning, but if you're are ready, grab a sponsor and don't let go. He or she will guide you through it.</br></br>
+                    I built this website to try and give back what was freely given to me. If we can help one person in their AA journey, it's worth the effort.
                 </p>
             </div>
         </div>
