@@ -20,7 +20,7 @@
                 11. Sought through prayer and meditation to improve our conscious contact with God as we understood Him, praying only for knowledge of His will for us and the power to carry that out.</br>
                 12. Having had a spiritual awakening as the result of these steps, we tried to carry this message to alcoholics, and to practice these principles in all our affairs.</br></br>
                 Alcoholics Anonymous p.59-60</br>
-                Copyright © 2019 by Alcoholics Anonymous World Services, Inc.
+                Copyright © 2020 by Alcoholics Anonymous World Services, Inc.
                 </p>
             </div>
         </div>
